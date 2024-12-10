@@ -1,0 +1,873 @@
+[
+  {
+    "id": "EDFLASERKIT",
+    "name": "Laser Guide Kit",
+    "source": "EDF",
+    "license": "Euler",
+    "license_id": "EDFEULER",
+    "license_level": 2,
+    "effect": "<div>Gain the \"Designate\" protocol.</div>",
+    "type": "System",
+    "sp": "1",
+    "description": "<div>While laser guide kits have been in use by EDF air raiders as far back as some theorize to be the FirstComm era, mech-type laser guide kits are a recent development to bolster comradery between pilots using the various EDF mechs and pilots using other manufacturer's mechs. While the energy requirements and mechanical complexity of the additional mounting points put a strain on the mech's systems, the reward for such an investment has been proven time and time again even before mech use by Air Raider-Gauss squads.</div>",
+    "tags": [{"id": "tg_unique"}],
+	"actions": [
+      {
+        "name": "Designate",
+        "activation": "Protocol",
+        "detail": "<div>Choose one target within Sensors and Line of Sight; until the start of your next turn, you and allies that Skirmish or Barrage against that target may choose to attack as if the attack originated from you for determining cover bonuses.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "EDFPLASMACLOUD",
+    "name": "KK-Plasma Cloud",
+    "source": "EDF",
+    "license": "Pythagoras",
+    "license_id": "EDFPYTHAG",
+    "license_level": 2,
+    "effect": "<div></div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>Kookaburra grenades, or KK grenades for short, are one of the EDF's most recent developments, and one they've eagerly distributed to the public. Whether it was for public testing or as a show of improvement to make up for the (continued) wanton distribution of the Explosion CQB weapon license, the effects of the device are certain: after a set time from impact after being thrown, the grenade begins to float in the air and emit countless lasers in all directions, creating a dangerous sphere of relatively non-destructive energy.</div>",
+    "tags": [{"id": "tg_limited","val": 2},{"id": "tg_grenade"},{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "KK Grenade",
+        "activation": "Quick",
+        "detail": "<div>Throw a KK Grenade within Range 5. Until the end of your next turn, at the end of each character's turn, if that character is within Blast 2 of the target area, they take 1d3 Energy damage.</div>",
+        "pilot": false,
+        "damage": [{"type": "Energy","val": "1d3"}],
+        "range": [{"type": "Range","val": 5},{"type": "Blast","val": 2}],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "KK Mine",
+        "type": "Mine",
+        "detail": "<div>Once detonated, until the end of the next turn of the character who detonated the mine, at the end of each character's turn, if that character is within Burst 2 of the mine they take 1d3 Energy damage.</div>",
+        "size": 1,"instances": 1,"cost": 1,
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "EDFOWSENTRY",
+    "name": "OW-Sentry Gun",
+    "source": "EDF",
+    "license": "Pythagoras",
+    "license_id": "EDFPYTHAG",
+    "license_level": 1,
+    "effect": "<div>Expend a charge to deploy an Owleye Sentry Gun that attaches to any object or surface within Sensors and line of sight. Owleye Sentry Guns cannot be recalled and expire at the end of the scene. Gain the Sentry Barrage free action, which can be taken once per round for each deployed Owleye Sentry Gun.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "<div>An autonomous mini-turret that automatically detects and attacks enemies within range. While its individual firepower is paltry compared to most weapons, it is nonetheless a beloved force multiplier for pilots who find themselves in defensive operations and in numbers a very capable area denial system when used by seasoned veterans. Its diminutive stature has also proven to be a morale improvement for many forces, typically being dubbed 'goofy little guys' by infantry and cavalry alike.</div>",
+    "tags": [{"id": "tg_limited","val": 6}],
+    "actions": [
+      {
+        "name": "Deploy Multiple Owleye Sentry Guns",
+        "activation": "Quick",
+        "detail": "<div>You may expend two charges of this system to deploy two Owleye Sentry Guns within the same action.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Owleye Sentry Gun",
+        "type": "Drone",
+        "detail": "<div>Gain the Sentry Barrage free action, which can be taken once per round for each deployed Owleye Sentry Gun. Owleye Sentry Guns cannot be recalled and expire at the end of the scene.</div>",
+        "size": 0.5,"instances": 1,"cost": 1,"hp": "1","evasion": "10","edef": "10",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Sentry Barrage",
+            "activation": "Free",
+            "detail": "<div>The Owleye Sentry Gun targets the nearest hostile character; that target takes 1 bonus Kinetic damage the next time it would be attacked before the start of your next turn.</div>",
+            "pilot": false,
+            "tech_attack": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDFITEMDROP",
+    "name": "PR-Supply Drone",
+    "source": "EDF",
+    "license": "Pythagoras",
+    "license_id": "EDFPYTHAG",
+    "license_level": 3,
+    "effect": "<div>This PR-Supply Drone may be deployed to any free space within Range 4. While it is adjacent to you, you may recall it as a free action.</div>",
+    "type": "System",
+    "sp": "4",
+    "description": "<div>Parakeet-type supply drones are printed alongside the mech, allowing additional ammunition and supplies to be carried in safe, detached containers that would otherwise weigh down the mech. These drones in particular have become a mainstay in many EDF frontline forces across the cosmos, providing quick ammunition resupplies in live combat situations and carrying vital medical equipment where they are needed most.</div>",
+    "tags": [{"id": "tg_unique"}],
+    "deployables": [
+      {
+        "name": "PR-Supply Drone",
+        "type": "Drone",
+        "detail": "<div>While adjacent to this drone, allied characters can activate it as a quick action, restoring 1 use of a Limited Use system or weapon of their choice. After being activated, the drone immediately moves 4 spaces or as close as possible to you. If it is not recalled by the end of the round after it was activated, it immediately disintegrates at the end of that round and must be repaired before it may be deployed again. If the drone was activated this combat and recalled, it may be deployed again by either spending 1 repair from your repair cap or 1 repair from the drone's repair cap. This drone may be recalled as a free action while adjacent to you.</div>",
+        "size": 1,"instances": 1,"cost": 1,"hp": "5","evasion": "8","edef": "8","repcap": "2",
+        "activation": "Quick",
+        "recall": "Free",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Activate PR-Supply Drone",
+            "activation": "Quick",
+            "detail": "<div>Restore 1 use of a Limited Use system or weapon of your choice. After being activated, the drone immediately moves 4 spaces or as close as possible to the mech that deployed it. </div>",
+            "pilot": false,
+            "tech_attack": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDFSTRAFE",
+    "name": "Strafing Drone Call-In",
+    "source": "EDF",
+    "license": "Pythagoras",
+    "license_id": "EDFPYTHAG",
+    "license_level": 2,
+    "effect": "<div>At the beginning of each scene, choose whether or not these Strafing Drones are active. At the end of each scene in which this Strafing Drone Call-In is active, if the Call In Strafing Drones action was not performed this scene, lose one use of the system. You may not use the Call In Strafing Drones quick action granted by this system if these Strafing Drones are not active.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>While the decision to print semi-autonomous weaponized drones was controversial at first, in the end it was decided that since the drones still needed a nearby pilot to guide them they were ultimately no different from many other off-map, AI-controlled weapons like satellites or artillery. The ruling ultimately came down to the limited uptime the drones suffered from, a massive relief to some savvy pilots who had grown attached to them and found them useful for bolstering the range and firepower of smaller mechs.</div>",
+    "tags": [{"id": "tg_limited","val": 2}],
+    "actions": [
+      {
+        "name": "Call In Strafing Drones",
+        "activation": "Quick",
+        "detail": "<div>A target area within Range 20 and line of sight is strafed by weaponized drones that orbit the combat zone. All characters within Blast 1 of the target area must pass an Agility save or take 1d3 kinetic damage. On a success, they take half damage. If the target is within Range 5, they take double damage.</div>",
+        "pilot": false,
+        "damage": [{"type": "Kinetic","val": "1d3"}],
+        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 1}],
+        "tech_attack": false
+      },
+      {
+        "name": "Call In Strafing Drones (Within Range 5)",
+        "activation": "Quick",
+        "detail": "<div>A target area within Range 5 and line of sight is strafed by weaponized drones that orbit the combat zone. All characters within Blast 1 of the target area must pass an Agility save or take 1d6 kinetic damage. On a success, they take half damage.</div>",
+        "pilot": false,
+        "damage": [{"type": "Kinetic","val": "1d6"}],
+        "range": [{"type": "Range","val": 5},{"type": "Blast","val": 1}],
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "EDFBORDERLINE",
+    "name": "Borderline Shield",
+    "source": "EDF",
+    "license": "Heron",
+    "license_id": "EDFHERON",
+    "license_level": 2,
+    "effect": "<div>Expend three charges as a Quick Action to deploy one Borderline shield across a Line 8 area 4 spaces high where at least one space is adjacent to you.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>The Borderline is an Air Raider defensive mainstay, with few things rivaling its pure defensive capabilities.</div>",
+    "tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 3},{"id": "tg_shield"}],
+    "deployables": [
+      {
+        "name": "Borderline",
+        "type": "Deployable",
+        "detail": "<div>This system creates a line 8 forcefield, 4 spaces high, with at least 1 space adjacent to you that provides hard cover. It does not obstruct Line of Sight, though characters and objects cannot pass through it. It lasts until destroyed, where it immediately dissipates. Deploying this system consumes 3 charges immediately and only provides its effect once.</div>",
+        "size": 1,"instances": 1,"cost": "3","armor": "1","hp": "30","evasion": "0","edef": "0",
+        "activation": "Quick",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "EDFAISUITE",
+    "name": "Storm-One-Class NHP",
+    "source": "EDF",
+    "license": "Heron",
+    "license_id": "EDFHERON",
+    "license_level": 3,
+    "effect": "<div>Your mech gains the AI tag; however, this NHP doesn’t count towards the number of AIs you may have installed at once. Also, you may install an additional AI in your mech. If one enters cascade (or becomes unshackled narratively), the other(s) prevent(s) it from taking control of your mech. You only lose control of your mech if all AI-tagged systems or equipment enter cascade. However, if the Storm-One-Class NHP enters cascade, it immediately takes control regardless of any other comp/con or NHP installed.</div>",
+    "type": "System",
+    "sp": "4",
+    "description": "<div>The Storm-One-Class NHP is more of an NHP Cooperative Program used to micromanage the control inputs of independently operating NHPs than a proper NHP itself. Oddly enough, despite its social role as an NHP mediator, the Storm-One-Class NHP itself is often quiet and reserved, other NHPs it is surrounded by following its silent, unheard words, warnings, and advice.</div>",
+    "tags": [{"id": "tg_unique"}],
+    "bonuses": [{"id": "ai_cap","val": 1,"overwrite": false,"replace": false}]
+  },
+  {
+    "id": "EDFBALAMLIMPET",
+    "name": "Limpet Detector",
+    "source": "EDF",
+    "license": "Heron",
+    "license_id": "EDFHERON",
+    "license_level": 1,
+    "effect": "<div>Expend a charge to plant Limpet Detonator Spreads in 3 spaces within a blast 1 area originating within Range 10 and line of sight that attach to any object, surface, or character on that space when you deploy this system. These spaces may be adjacent or already occupied by mines, and do not detonate nor are detonated by other armed mines. This mine detonates when a character or object becomes adjacent to any space occupied by the object, surface, or character this mine is attached to. Hostile characters may ignore this by succeeding on an Agility save, where the mine must be attached to a different space or target instead.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>The Limpet Detector is a remotely detonated explosive shrapnel charge gun with an automated detonator mounted on it. A tactical device favored by thrifty Air Raider recruits, unique-though-unsanctioned uses have been found in recent times and often result in a dramatic loss of equipment by careless Air Raiders and pilots.</div>",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Fire Limpet Detector",
+        "activation": "Quick",
+        "detail": "<div>Fire the Limpet Detector directly onto a hostile character within Range 5. Your target must succeed on an Engineering save or take 1d3+2 Kinetic damage.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Limpet Detector Spread",
+        "type": "Mine",
+        "detail": "<div>All characters, objects, and cover within a Burst 1 area must pass a Hull save or take 3 kinetic damage. On a success, they take 1d3 kinetic damage instead.</div>",
+        "size": 1,"cost": 1,
+        "activation": "Quick",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "EDFNOTHUNGCOREINTEGRATED",
+    "name": "Nothung Drone",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<div>On your first turn in any combat scene, you must deploy the Nothung Drone as a free action to any free space within Sensors, if the Nothung Drone is available. It cannot be recalled until the end of the scene, where it is automatically recalled.</div>",
+    "type": "System",
+    "sp": "0",
+    "description": "<div>The Nothung satellite was a predecessor to the Bulge Laser array, a lone satellite hovering over the Cradle for thousands of years, until the fall of SecCom made its decommission necessary to appease the newly rising Third Committee and its pillars. While the large, massive satellite was later replaced with the Bulge Laser array, the Nothung lived on as the name of what was originally a plug-in to the Storm-One Structural Conversion program before it became its own standalone refactoring program which would partition a section of the original blueprint to allow for a parasitic satellite drone to be printed grafted onto the surface of the original frame, where it could then dismount itself and fly using the same reactor-based power generation mechs use. From its high-up vantage point, it can fire a continuous beam laser for miles as a fire support platform.</div>",
+    "tags": [{"id": "tg_unique"}],
+    "deployables": [
+      {
+        "name": "Nothung Drone",
+        "type": "Drone",
+        "detail": "<div>The Nothung Drone may fire its weapons from beyond 10 spaces above terrain, objects, and the environment. The Nothung Drone may hover when it moves.</div><div>Gain the following quick tech actions:</div><ul><li><div>The Nothung Drone fires a directed continuous beam at a target within the Nothung Drone's line of sight and Range 20. On a hit, the target takes 3 AP Energy Damage and is slowed until the end of their next turn.</div></li><li><div>The Nothung Drone moves in a straight line in any direction up to 6 spaces.</div></li><li><div>The Nothung Drone applies Lock On to or Scans a target within Range 20.</div></li><li><div>The Nothung Drone Searches for a character or object within Range 20.</div></li></ul>",
+        "size": 2,"instances": 1,"cost": 1,"hp": "15","evasion": "6","edef": "10",
+        "activation": "Free","recall": "Other",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Fire Nothung Drone Beam",
+            "activation": "Quick Tech",
+            "detail": "<div>The Nothung Drone fires a directed continuous beam at a target within the Nothung Drone's line of sight and Range 20. On a hit, the target takes 1d3 AP Energy Damage and is slowed until the end of their next turn.</div>",
+            "pilot": false,
+            "tech_attack": false
+          },
+          {
+            "name": "Move Nothung Drone",
+            "activation": "Quick Tech",
+            "detail": "<div>The Nothung Drone flies in a straight line in any direction up to 6 spaces.</div>",
+            "pilot": false,
+            "tech_attack": false
+          },
+          {
+            "name": "Lock Nothung Drone",
+            "activation": "Quick Tech",
+            "detail": "<div>The Nothung Drone applies Lock On to or Scans a target within Range 20.</div>",
+            "pilot": false,
+            "tech_attack": false
+          },
+          {
+            "name": "Ping Nothung Drone",
+            "activation": "Quick Tech",
+            "detail": "<div>The Nothung Drone Searches for a character or object within Range 20.</div>",
+            "pilot": false,
+            "tech_attack": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EDFFENCERADDBOOSTER",
+    "name": "Add Booster",
+    "source": "EDF",
+    "license": "Gauss",
+    "license_id": "EDFGAUSS",
+    "license_level": 1,
+    "effect": "<div>1/round, when you boost, are knocked back, or are knocked prone, you may perform the Reposte action.</div>",
+    "type": "System",
+    "sp": "1",
+    "description": "<div>The standard fleet license for the EDF Gauss frame features the Add Booster as a way to help the frame keep up with modern small frames the Gauss finds itself competing with in spite of its aging design. </div>",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Riposte",
+        "activation": "Reaction",
+        "detail": "<div>Immediately stand up and move a number of spaces equal to half your speed, ignoring engagement and reactions.</div>",
+        "pilot": false,
+        "tech_attack": false,
+        "frequency": "1/round",
+        "trigger": "<div>You boost, are knocked back, or are knocked prone.</div>"
+      }
+    ]
+  },
+  {
+    "id": "EDFPROTEUSEAGLE",
+    "name": "EDFCON",
+    "source": "EDF",
+    "license": "Thales",
+    "license_id": "EDFTHALES",
+    "license_level": 2,
+    "type": "System",
+    "sp": "2",
+    "description": "<div>The Earth Defense Force Concierge unit is more of a novel operating system than any sort of artificial or paracausal intelligence, featuring native support for features typically added to mechs post-production. The now-bloated program, built upon years of constant and unneeded updates, still functions relatively well and when used to hack the unknown, unusual, and esoteric functions found within tend to simply fail to parse and crash opposing operating systems rather than do the functions intended by the pilot.</div>",
+    "actions": [
+      {
+        "name": "Failed to read /remote/domain/???{&amp;}??/SPR1G@N",
+        "activation": "Invade",
+        "detail": "<div>You force the target to attempt to re-render you or your ally's mech as an asset of some sort not found within or even supported by their OS. The target hostile character treats either you or an allied character of your choice as invisible until the end of their next turn.</div>",
+        "pilot": false,
+        "tech_attack": false
+      },
+      {
+        "name": "Area of {EDF}",
+        "activation": "Invade",
+        "detail": "<div>You project a mock-barrage into the target's sensors that tricks them into thinking a target space is being bombarded. Until the end of their next turn, they cannot make any voluntary movements into a blast 3 area around the target space and are knocked prone if they do enter it. The effect ends if the target ends their turn inside the area.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "EDFFENCERGREATSHIELD",
+    "name": "Great Shield",
+    "source": "EDF",
+    "license": "Gauss",
+    "license_id": "EDFGAUSS",
+    "license_level": 3,
+    "effect": "<div>When you Brace, you may expend one limited charge of this system to reduce the damage dealt to you after all other calculations by one.</div>",
+    "type": "System",
+    "sp": "1",
+    "tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 3}],
+    "actions": [
+      {
+        "name": "Shield Stabilize",
+        "activation": "Full",
+        "detail": "<div>Restore all limited charges for this system.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "EDFFENCERDASHCELL",
+    "name": "Dash Cell",
+    "source": "EDF",
+    "license": "Gauss",
+    "license_id": "EDFGAUSS",
+    "license_level": 3,
+    "effect": "<div>You may Boost a second time per turn, and may hover during it. However, you can not change altitude with this movement.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>A sidegrade to the Add Booster system. While less reactive than its cousin, its power is on par with many flight systems even if it is less flexible. All thrust is oriented to provide optimal stability during high-speed maneuvers.</div>",
+    "tags": [{"id": "tg_unique"}],
+	"actions": [
+      {
+        "name": "Dash Boost",
+        "activation": "Quick",
+        "detail": "<div>Hover a number of spaces equal to your speed, however you may not change your altitude during this movement.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "EDFVEGALTAMG13",
+    "name": "MG 13 Grenade Package",
+    "source": "EDF",
+    "license": "Erdos",
+    "license_id": "EDFERDOS",
+    "license_level": 1,
+    "type": "System",
+    "sp": "2",
+    "description": "<div>The MG 13 grenade package features the configurable MG 13 supermassive grenade. Originally meant for Ranger use, its sheer mass proved too unwieldy for infantry use. It found a new home in mech scale combat, however.</div>",
+    "tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 2}],
+    "actions": [
+      {
+        "name": "MG 13 Grenade",
+        "activation": "Quick",
+        "detail": "<div>Become slowed until the end of your next turn and throw an MG 13 grenade within Range 5. All character within a blast 2 area must pass an agility save or take 2d6 Explosive damage. On a success, they take one fourth the damage.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ],
+    "deployables": [
+      {
+        "name": "MG 13J Mine",
+        "type": "Mine",
+        "detail": "<div>This mine does not detonate due to proximity. Instead, at the end of the second round after this is armed, this mine immediately detonates and all characters within a Burst 2 area must pass an Agility save or take 4d6 Explosive damage. On a success, they take one fourth damage.</div>",
+        "size": 0.5,"instances": 1,"cost": 1,
+        "activation": "Quick",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "EDFVEGALTAPERSONALSHIELD",
+    "name": "Personal Shelter",
+    "source": "EDF",
+    "license": "Erdos",
+    "license_id": "EDFERDOS",
+    "license_level": 2,
+    "effect": "<div>Expend a charge to deploy a personal shelter to a free, adjacent space. At the end of your turn, it deploys a shield wall that is 3 spaces high that fully surrounds the space.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 1},{"id": "tg_shield"}],
+    "deployables": [
+      {
+        "name": "Personal Shelter",
+        "type": "Deployable",
+        "detail": "<div>All characters completely within the shelter's space gain hard cover against all attacks from outside the shelter from all directions and Resistance to damage from Blast, Line, Burst, and Cone attacks that originate outside the bunker. </div><div>The Shelter is open topped, and characters may enter or exit at will. It can’t be moved or deactivated once deployed.</div>",
+        "size": 1,"instances": 1,"cost": 1,"hp": "20","evasion": "5",
+        "activation": "Quick",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "EDFPROTEUSJANGO",
+    "name": "VOGEL-Class NHP",
+    "source": "EDF",
+    "license": "Thales",
+    "license_id": "EDFTHALES",
+    "license_level": 3,
+    "effect": "<div>You are unable to hand over control of your mech to the VOGEL NHP as a Protocol, but it can enter cascade.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>VOGEL-Class NHPS are typically ship-grade NHPs, however they have shown to be capable of mech-scale functions where they enter a miniaturized, mech-scale form of Legionspace where they analyze and assist the pilot with navigating the local Omninet. This sort of co-dependence makes the VOGEL too occupied to properly control the mech, however it is capable of impressive feats of battlefield manipulation to make up for the lack of micromanagement.</div>",
+    "tags": [{"id": "tg_ai"},{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "VOGEL SENSOR SWEEP",
+        "activation": "Invade",
+        "detail": "<div>You tap into and force a sweep of the enemy's IFF log, gathering all available info. You immediately Scan and reveal all enemies within the Target's Line of Sight and Sensors.</div>",
+        "pilot": false,
+        "tech_attack": false
+      },
+      {
+        "name": "VOGEL JUMPJACK LOCK",
+        "activation": "Invade",
+        "detail": "<div>You immediately skirmish with a ranged weapon at your target using their inputs to guide and lead your weapons, automatically hitting and dealing half damage, heat, and burn if they are within that weapon’s range. You still roll to hit to determine critical hit.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "EDFBALAMGUIDEBEACON",
+    "name": "Guide Beacon Gun",
+    "source": "EDF",
+    "license": "Heron",
+    "license_id": "EDFHERON",
+    "license_level": 2,
+    "type": "System",
+    "sp": "2",
+	"effect": "This system may be reloaded as part of a Stabilize where the \"Reload all weapons\" option has been selected.",
+    "description": "<div>Guide Beacon Guns, one of many stable Air Raider support equipment pieces capable of changing the battlefield by providing vital guidance support to allies with minimal overhead for the user.</div>",
+    "tags": [{"id": "tg_loading"},{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Fire Guide Beacon",
+        "activation": "Quick",
+        "detail": "<div>A target hostile character within Range 15 and line of sight must pass an Agility Save or receive Lock On. Targets who have Lock On this way may be attacked multiple times by weapons and systems requiring separate targets, but the action must consume the Lock On when doing so.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "EDFDEPTHSKID",
+    "name": "Skidboost Springlauncher",
+    "source": "EDF",
+    "license": "Poincare Custom",
+    "license_id": "EDFPOINCUSTOM",
+    "license_level": 1,
+    "effect": "<div>You use your legs, jump jets, and other tools to avoid an attack aimed at you.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "<div>The Skidboost Springlauncher is an adaptive program that analyzes the mech to best make use of its joints, thrusters, and gyros to perform rapid bursts of movement on short notice. The stress this puts on the mech is immense, so use is restricted to a certain number of times before the program locks itself up.</div>",
+    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Skid",
+        "activation": "Reaction",
+        "detail": "<div>Use onboard thrusters, reinforced joints, or whatever other reactive measure to immediately Jump vertically or horizontally and change the target of the triggering attack to the space you were standing on if you were the target. You must land on a surface you can stand on or begin falling after the triggering attack resolves.</div>",
+        "pilot": false,
+        "tech_attack": false,
+        "frequency": "1/round",
+        "trigger": "<div>You are targeted by or in the area of effect of an attack.</div>"
+      }
+    ]
+  },
+  {
+    "id": "EDFDEPTHRACER",
+    "name": "Speed Stars",
+    "source": "EDF",
+    "license": "Poincare Custom",
+    "license_id": "EDFPOINCUSTOM",
+    "license_level": 3,
+    "effect": "<div>Expend a charge to deploy a Speed Star drone that immediately moves a number of spaces equal to its speed directly away from you. The Speed Star does not take damage from falling. Speed Stars cannot be recalled, and expire at the end of the Scene.</div>",
+    "type": "System",
+    "sp": "1",
+    "description": "<div>Speed Stars are popular mine defusal and distraction drones, also known for their usage as racing drones among EDF personnel. While some civilian model Speed Stars can be recollected, recharged, and customized, the most common model is biodegradable and meant to be used then disposed of.</div>",
+    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"}],
+    "deployables": [
+      {
+        "name": "Speed Star",
+        "type": "Drone",
+        "detail": "<div>The Speed Star moves a number of spaces equal to its speed in a straight line at the end of each of your turns. If it is stopped by an obstruction, it moves away from it in a straight line until it is stopped by another obstruction. Speed Stars cannot become Engaged, but do provoke reactions. When an enemy targets you or an ally, if a Speed Star is also within its range, it must succeed a Systems check or change its target to the Speed Star.</div>",
+        "size": 0.5,"instances": 1,"cost": 1,"hp": "5","evasion": "8","edef": "2","speed": "6",
+        "activation": "Quick",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "EDFVEGALTAANTENNA",
+    "name": "Remedial Receiver",
+    "source": "EDF",
+    "license": "Erdos",
+    "license_id": "EDFERDOS",
+    "license_level": 3,
+    "effect": "<div>As a protocol, you may become Slowed and allies within sensors may use tech attacks and tech actions as if they originate from you.</div>",
+    "type": "System",
+    "sp": "1",
+    "description": "<div>The Remedial Receiver is the pinnacle of the EDF's ingenuity when dealing with improving team-scale telecommunication. By rerouting power meant for movement to a collection of black boxes and radio and scanning equipment, the Remedial Receiver grants an enhanced technical suite to mechs who need a little extra push or would simply enjoy the additional range for scanning and observing their surroundings.</div>",
+    "tags": [{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Activate Remedial Receiver",
+        "activation": "Protocol",
+        "detail": "<div>Until the end of your next turn, become Slowed and allies within sensors may use tech attacks and actions as if they originate from you.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "EDFVEGALTABOLSTERBOLSTER",
+    "name": "Omega Tech Support Package",
+    "source": "EDF",
+    "license": "Erdos",
+    "license_id": "EDFERDOS",
+    "license_level": 3,
+    "effect": "<div>If you have not performed your standard move or any other action other than protocols when you Bolster or Lock On, you may do the action again as a free action.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>While the Ranger support squad called Omega Team has been disbanded since the fall of SecComm, their legacy has been immortalized with the Omega Tech Support Package; a collection of software and hardware upgrades set aside and bundled for dedicated EDF licensees and contractors as a reward for their continued contribution.</div>",
+    "tags": [{"id": "tg_unique"}]
+  },
+  {
+    "id": "EDFDEPTHMINIMAP",
+    "name": "Minimap Module",
+    "source": "EDF",
+    "license": "Poincare Custom",
+    "license_id": "EDFPOINCUSTOM",
+    "license_level": 3,
+    "effect": "<div>You don't need Line of Sight to Scan targets.</div>",
+    "type": "System",
+    "sp": "",
+    "description": "<div>While the Minimap Module is a standard piece of equipment for EDF personnel, it's a premium piece of equipment for those outside of the rank and file of the EDF. Lightweight, low impact, a clean addition to any mech.</div>",
+    "tags": [{"id": "tg_unique"}]
+  },
+  {
+    "id": "EDFNIXGOLD",
+    "name": "Gold Coating",
+    "source": "EDF",
+    "license": "Euler",
+    "license_id": "EDFEULER",
+    "license_level": 3,
+    "effect": "<div>If you are targeted by a tech action, the character targeting must pass a Hull save. If they fail, the action is canceled. While you are hidden, hostile traits and systems cannot affect you, hostiles cannot see you without line of sight, and this cannot be prevented by any means. If you take structure damage, this system is immediately destroyed before any roll is made.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "<div>The coating of mechs in gold was a fringe idea when it was conceived, even in the think-tanks of the EDF, but its benefits outweigh its fragility for many pilots who now pay a premium to the EDF for the rights to use their gold plating patterns for mechs across space and time.</div>",
+    "tags": [{"id": "tg_unique"}]
+  },
+  {
+    "id": "EDFINTEGRATEDCOREBOMBARDMENT",
+    "name": "Bombardment Musculature System",
+    "source": "EDF",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<div>Your mech gains resistance to non-Heat damage that originates from yourself, your weapons, and your systems. This cannot be prevented in any way whatsoever, and no rule supersedes this.</div>",
+    "type": "System",
+    "sp": 0,
+    "description": "<div>Deep in testing in the EDF Exotic Materials Facility, the Bombardment Musculature System uses the Storm One Structural Conversion program to simplify the muscles and hydraulics of mechs to make them resistant to explosions and other forms of limited damage. Active testing of this system is distributed under NDA to a limited pool of participants.</div>",
+    "tags": [{"id": "tg_unique"},{"id": "tg_exotic","filter_ignore": true}]
+  },
+  {
+    "id": "HD_OBSIDIAN_STATICFIELD",
+    "name": "Static Field Conductors",
+    "source": "HELLDIVERS™",
+    "license": "Shakyas",
+    "license_id": "HD_SHAKYAS",
+    "license_level": 2,
+    "effect": "<div></div>",
+    "type": "Deployable",
+    "sp": "2",
+    "description": "<div><em>\"The immediate area is covered in Static Field Conductors that shock nearby enemies, slowing their movement considerably.\"<br>- Armory Description</em></div><div></div><div>Thrown by infantry or launched from a mech via a shoulder-mounted stratagem launcher, these deployable static field conductors use electricity to slow enemies down. Unlike their predecessors, newer versions have been tuned to play havoc with actuators, making them just as effective against mechanical targets as they are against biological ones.</div>",
+    "tags": [{"id": "tg_limited","val": 3}],
+    "actions": [
+      {
+        "name": "Deploy Static Field Conductors",
+        "activation": "Quick",
+        "detail": "<div>When fired as a quick action, these conductors influence a Blast 2 area, making it difficult terrain. Immunity to difficult terrain granted by other systems, like the Nelson's Bulwark Mods, does not work against difficult terrain created by the Static Field Conductors</div>",
+        "cost": "1",
+        "pilot": false,
+        "range": [{"type": "Range","val": 10},{"type": "Blast","val": 2}],
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "HD_LUMBERER_TURRET",
+    "name": "A/RX-34 Railcannon Turret",
+    "source": "HELLDIVERS™",
+    "license": "Koliyas",
+    "license_id": "HD_KOLIYAS",
+    "license_level": 3,
+    "effect": "<div>1/scene, as a quick action, you may launch a stratagem beacon up to Range 5 to call in an A/RX-34 Railcannon Turret. The turret is delivered at the start of your next turn, and can fire immediately afterwards. Gain the Railcannon Shot Reaction, which can be taken once per round for each A/RX-34 Railcannon Turret deployed when an allied character makes an attack against a character against a target within Line of Sight and Range 15.</div>",
+    "type": "Drone",
+    "sp": "5",
+    "description": "",
+    "tags": [{"id": "tg_limited","val": 1}],
+    "deployables": [
+      {
+        "name": "A/RX-34 Railcannon Turret",
+        "type": "Turret",
+        "detail": "<div>Gain the Railcannon Shot Reaction, which can be taken once per round for each deployed A/RX-34 Railcannon Turret. A/RX-34 Railcannon Turrets cannot be recalled and expire at the end of the scene.</div>",
+        "size": 1,"instances": 1,"cost": 1,"armor": "2","hp": "8","evasion": "12","edef": "6",
+        "activation": "Quick",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Railcannon Shot",
+            "activation": "Reaction",
+            "detail": "<div>The A/RX-34 Railcannon deals 3 AP kinetic damage to all targets in Line 15, aiming at the nearest hostile target in line of sight. The attack continues to the full length of the line or until it hits an object or piece of terrain.</div>",
+            "pilot": false,
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "One (or more) A/RX-34 Railcannons are deployed.",
+            "trigger": "An allied character makes an attack against a hostile character."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HD_LUMBERER_FREEZERCANISTERS",
+    "name": "Emergency Heat Dump Canisters",
+    "source": "HELLDIVERS™",
+    "license": "Koliyas",
+    "license_id": "HD_KOLIYAS",
+    "license_level": 1,
+    "effect": "<div>Whenever you would take stress damage from reaching your heat cap, these canisters automatically eject, clearing half of your heat. This system can only be activated 1/round.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [{"id": "tg_limited","val": 1},{"id": "tg_unique"}]
+  },
+  {
+    "id": "HD_Byblos_MISSILEBARRAGE",
+    "name": "Missile Barrage",
+    "source": "HELLDIVERS™",
+    "license": "Byblos",
+    "license_id": "HD_BYBLOS",
+    "license_level": 3,
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Launch Missile Barrage",
+        "activation": "Quick",
+        "detail": "<div>Fire a stratagem beacon within Range 5. From where it lands, choose 3 Blast 1 areas within Range 3 of the beacon, which cannot overlap. At the start of your next turn, any characters within the areas you chose must succeed on an Agility save or take 1d6 Explosive damage, taking half as much on a success. All characters can see where the missiles will land.</div>",
+        "range": [{"type": "Range","val": 8},{"type": "Blast","val": 1}],
+		"damage": [{"type": "Explosive","val": "1d6"}],
+        "pilot": false,
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "HD_Byblos_HEAVYSTRAFINGRUN",
+    "name": "Strafing Run",
+    "source": "HELLDIVERS™",
+    "license": "Byblos",
+    "license_id": "HD_BYBLOS",
+    "license_level": 1,
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"},{"id": "tg_quick_action"}],
+    "actions": [
+      {
+        "name": "Call Strafing Run",
+        "activation": "Quick",
+        "detail": "<div>Choose a Line 9 area centered at any point of your choosing within Range 8, in any orientation. Characters in this area must succeed on an Agility save or take 1d6 Kinetic damage, taking half as much on a success.</div>",
+        "damage": [{"type": "Kinetic","val": "1d6"}],
+		"range": [{"type": "Range","val": 8},{"type": "Line","val": 9}],
+        "pilot": false,
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "HD_LIBERTYDIVER_VINDICATOR",
+    "name": "Vindicator Dive Bomb",
+    "source": "HELLDIVERS™",
+    "license": "Mallakas",
+    "license_id": "HD_MALLAKAS",
+    "license_level": 3,
+    "effect": "<div>As a quick action, you launch a stratagem beacon anywhere within Range 10. As a reaction, all characters within Blast 1 of the beacon may move until they are outside of the blast radius. Characters that take this reaction cannot take reactions until the start of their next turn, and characters in the blast radius that do not take 4d3 Explosive damage.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [{"id": "tg_limited","val": 3}]
+  },
+  {
+    "id": "HD_LIBERTYDIVER_TURRETS",
+    "name": "A/CR-9 Suppressor Mini-Turrets",
+    "source": "HELLDIVERS™",
+    "license": "Mallakas",
+    "license_id": "HD_MALLAKAS",
+    "license_level": 1,
+    "effect": "<div>Expend a charge to deploy an A/CR-9 Suppressor Mini-Turret that attaches to any object, surface, or mech within Sensors and line of sight. Gain the Suppressor Attack reaction, which can be taken once for each deployed mini-turret drone. Mini-turret drones cannot be recalled and expire at the end of the scene.</div>",
+    "type": "Drone",
+    "sp": "1",
+    "description": "",
+    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_drone"}],
+    "deployables": [
+      {
+        "name": "A/CR-9 Suppressor Mini-Turret",
+        "type": "Turret",
+        "detail": "<div>Gain the Suppressor Attack reaction, which can be taken once for each deployed A/CR-9 Suppressor Turret. Turret drones cannot be recalled and expire at the end of the scene. Unlike other turrets, these mini-turrets can be attached to a friendly mech, inheriting their host's Evasion &amp; E-Defense. When attached this way, they occupy the same space and take any heat their host takes. When the turret dies while attached to a mech, any extra damage from the killing blow is transferred to the host mech.</div>",
+        "size": 0.5,"instances": 1,"cost": 1,
+        "activation": "Quick",
+        "pilot": true,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Suppressor Attack",
+            "activation": "Reaction",
+            "detail": "<div>The A/CR-9 Suppressor Mini-Turret adds 2 bonus damage to the the attack against the target, as long as it has line of sight.</div>",
+            "pilot": false,
+            "tech_attack": false,
+            "frequency": "1/round",
+            "trigger": "<div>An allied character within Range 12 of a turret drone makes a successful attack.</div>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HD_LIBERTYDIVER_HELLBOMB",
+    "name": "NUX-223 Hellbomb",
+    "source": "HELLDIVERS™",
+    "license": "Mallakas",
+    "license_id": "HD_MALLAKAS",
+    "license_level": 1,
+    "effect": "<div>When the NUX-223 Hellbomb would be deployed, it is instead deployed at the start of the following turn, immediately forcing any objects, cover, or characters in the deployment area to move until they are no longer in the deployment area and dealing 2d6 kinetic damage. If they cannot be moved in any way, they are annihilated instead and the NUX-223 Hellbomb is deployed as usual.</div>",
+    "type": "System",
+    "sp": 4,
+    "description": "",
+	"tags": [{"id":"tg_limited","val":1}],
+    "deployables": [
+      {
+        "name": "NUX-223 Hellbomb",
+        "type": "Deployable",
+        "detail": "<div>The NUX-223 Hellbomb can be armed as a full action. Once armed, it immediately initiates a meltdown and, at the end of the round after the following round, explodes as though it suffered a reactor meltdown. The explosion annihilates the deployable, immediately killing any characters with the biological tag and dealing 4d6 AP Energy damage to characters and objects which are not prone within blast 2. If they are prone, they only receive 2d6 Energy damage. All characters within the area may drop prone as a reaction at any time or as a free action on their turn. If the NUX-223 Hellbomb is destroyed before the meltdown detonates, it does not explode, its meltdown immediately ceases, and the deployable becomes rubble. The NUX-223 Hellbomb cannot be recalled and expires at the end of the scene regardless if it is armed or not.</div>",
+        "size": 1,"instances": 1,"cost": 1,"hp": "10+{grit}",
+        "activation": "Quick",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Activate Hellbomb",
+            "activation": "Full",
+            "detail": "<div>Arms an adjacent NUX-223 Hellbomb, initiating an irreversible meltdown within it where it will explode at the end of the round following the round it was armed as though it suffered a reactor meltdown. The explosion annihilates the deployable, immediately killing any characters with the biological tag and dealing 4d6 AP Energy damage to characters and objects which are not prone within blast 2. If they are prone, they only receive 2d6 Energy damage. All characters within the area may drop prone as a reaction at any time or as a free action on their turn.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HD_LIBERTYDIVER_LAWNDARTS",
+    "name": "Javelin Charges",
+    "source": "HELLDIVERS™",
+    "license": "Mallakas",
+    "license_id": "HD_MALLAKAS",
+    "license_level": 2,
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [{"id": "tg_limited","val": 2},{"id": "tg_grenade"},{"id": "tg_unique"}],
+    "actions": [
+      {
+        "name": "Throw Javelin Charge",
+        "activation": "Quick",
+        "detail": "<div>Throw a Javelin within Range 10. All characters within a Blast 1 area must pass an Agility save or take 1d6 Explosive damage. On a success, they take half damage.</div>",
+        "damage": [{"type":"Explosive","val":"1d6"}],
+		"range": [{"type":"Range","val":10},{"type":"Blast","val":1}],
+		"pilot": false,
+        "tech_attack": false
+      }
+    ]
+  },
+  {
+    "id": "HD_STUN_MINES",
+    "name": "Airdropped Stun Mines",
+    "source": "HELLDIVERS™",
+    "license": "Koliyas",
+    "license_id": "HD_KOLIYAS",
+    "license_level": 2,
+    "effect": "<div></div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [{"id": "tg_limited","val": 2}],
+    "actions": [
+      {
+        "name": "Request Airdropped Stun Mines",
+        "activation": "Quick",
+        "detail": "<div>When fired as a quick action, these airdropped mines cover a Blast 2 area within Range 15. When a character starts their turn within this area or enters it for the first time in a turn, they must succeed on an Agility save or be Impaired and Slowed until the end of their next turn.</div>",
+        "pilot": false,
+        "tech_attack": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+[
+{
+	"id": "edf_sitrep_regicide",
+	"name": "Regicide",
+	"description": "REGICIDE missions require the PCs to protect their leader while attempting to defeat the enemy leader. The enemy leader is defeated when it either gives up or is destroyed.",
+	"pcVictory": "PCs defeat the designated leader",
+	"enemyVictory": "PCs' designated leader is destroyed or the enemy leader is not defeated",
+	"deployment": "The GM deploys the enemy leader in the EDZ first, then the PCs deploy their leader to the Allied Deployment Zone, then the GM and PCs alternate deploying in their respective zones until all active units are deployed."
+}
+]

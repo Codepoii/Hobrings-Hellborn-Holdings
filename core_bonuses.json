@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EDFSPRITEFALL",
+    "name": "Spritefall Access",
+    "source": "EDF",
+    "effect": "<div>Gain 2 Spritefall Dies, 2d6 starting at 1 each. Whenever an enemy's HP is reduced to 0 or its heat cap is reached, lower the value of one Spritefall Die by 1, to a minimum of 1. <br>When both Spritefall Dies reach 1, while you are not mounted in your mech, you may reset both to 6 and Activate Spritefall as a pilot full action.<br>The value of your Spritefall Die persists between scenes, but resets when you rest or perform a Full Repair.</div>",
+    "description": "<div>While the EDF does manufacture and license printing rights to mechs, it is best known for its vast, sprawling satellite array. While not as absolutely destructive as the Long-Spool weapons that are in more common use, the utility of having a weapon that is both powerful and always available is undeniable, and the Spritefall satellite array capitalizes on this demand to the fullest. Capable of punching through the atmosphere without detonating the \"round\", the Spritefall engages targets with a barrage of fire typically reserved for fleet combat without causing miniature localized catastrophes like many other EDF weapon systems.</div>",
+    "mounted_effect": "",
+    "actions": [
+      {
+        "name": "Activate Spritefall",
+        "activation": "Full",
+        "detail": "<div>You activate the Spritefall's firing sequence, firing its weapon at a Blast 3 area within Range 50 and Line of Sight. Until the end of the next round after this action is taken, all characters, objects, and cover that start their turn within the affected area must pass a Hull save or take 4 AP Energy damage for each space they occupy within the affected area and are Slowed, and this cannot be reduced in any way. On a success, they take 2 AP Energy Damage and are Slowed. Size 1/2 characters that succeed take no damage and are not Slowed.</div>",
+        "pilot": true,
+        "synergy_locations": ["pilot_weapon"],
+        "tech_attack": false
+      }
+    ],
+    "counters": [
+      {
+        "id": "EDFSPRITEFALLDIE",
+        "name": "Spritefall Die 1",
+        "min": "1",
+        "max": "6",
+        "default_value": "6"
+      },
+      {
+        "id": "EDFSPRITEFALLDIE2",
+        "name": "Spritefall Die 2",
+        "min": "1",
+        "max": "6",
+        "default_value": "6"
+      }
+    ]
+  },
+  {
+    "id": "EDFCOREBLAZER",
+    "name": "Blazer Priviliges",
+    "source": "EDF",
+    "effect": "<div>Gain access to the BLAZER Exotic Weapon.</div>",
+    "description": "<div>The Blazer, once an experimental and legendary tool used by the elite of the elite EDF soldiers, it is now licensed to a very limited and select few lancers who pass an extensive screening process. This is the most common path lancers go through to receive one of these well-renowned weapons, and very few go back on their decision once they've obtained it.</div>",
+    "special_equipment": ["EDFBLAZERGEAR","EDFINTEGRATEDCOREBLAZER"]
+  },
+  {
+    "id": "EDFJUMP",
+    "name": "Euler Thruster System",
+    "source": "EDF",
+    "effect": "<div>You can hover when you Move or Boost; however, you must end the movement on the ground or another solid surface or else immediately begin falling.</div>",
+    "description": "<div>While the Smith-Shamano All-Theater Movement Suite is a far more popular modification, some pilots prefer the range of motion afforded to them by the Euler Thruster System.</div>"
+  },
+  {
+    "id": "EDFCORECONVERSION",
+    "name": "Storm One Structural Conversion",
+    "source": "EDF",
+    "effect": "<div>You lose -1 Structure but Gain +9 HP. 1/scene, if you would lose structure and roll on the structure loss table, you may double the result of one dice in the roll. If this would result in a roll result above 6, you are not impaired and simply lose structure.</div>",
+    "description": "<div>While the Storm One Structural Conversion is an NHP-guided blueprint refraction technique developed specially to help the Pythagoras Program succeed, the process has been optimized since its inception and the base software is available to appropriately licensed and pilots to reduce the sectional complexity of any mech pattern with a few setting tweaks and a little fiddling with the right option.</div>",
+    "bonuses": [
+      {
+        "id": "structure",
+        "val": -1,
+        "overwrite": false,
+        "replace": false
+      },
+      {
+        "id": "hp",
+        "val": 9,
+        "overwrite": false,
+        "replace": false
+      }
+    ],
+    "synergies": [
+      {
+        "locations": ["structure"],
+        "detail": "<div>1/scene, if you would lose structure and roll on the structure loss table, you may double the result of one dice in the roll. If this would result in a roll result above 6, you are not impaired and simply lose structure.</div>"
+      }
+    ]
+  },
+  {
+    "id": "EDFCORENOTHUNG",
+    "name": "Nothung Drone Carrier System",
+    "source": "EDF",
+    "effect": "<div>Your mech gains the Nothung Drone Integrated System.</div>",
+    "description": "<div>The Nothung satellite was a predecessor to the Bulge Laser array, a lone satellite hovering over the Cradle for thousands of years, until the fall of SecCom made its decommission necessary to appease the newly rising Third Committee and its pillars. While the large, massive satellite was later replaced with the Bulge Laser array, the Nothung lived on as the name of what was originally a plug-in to the Storm-One Structural Conversion program before it became its own standalone refactoring program which would partition a section of the original blueprint to allow for a parasitic satellite drone to be printed grafted onto the surface of the original frame, where it could then dismount itself and fly using the same reactor-based power generation mechs use. From its high-up vantage point, it can fire a continuous beam laser for miles as a fire support platform.</div>",
+    "special_equipment": ["EDFNOTHUNGCOREINTEGRATED"]
+  },
+  {
+    "id": "EDFCOREBACKING",
+    "name": "Donation to the EDF",
+    "source": "EDF",
+    "effect": "<div>Gain one reserve of your choice with the GM's permission. This reserve is permanent; instead of expiring at the end of a mission, the reserve is refreshed at the end of the mission or at GM’s discretion.</div>",
+    "description": "<div>Some pilots opt to simply give their time to the EDF in leu of any special permissions, hidden techniques, or unique software licensing rights. While the EDF appreciates their dedication, it refuses to have it go unrewarded and has instead opted to offer a \"Donator's Bonus\".</div>"
+  },
+  {
+    "id": "HD_CORE_SHREDDER",
+    "name": "Shredder Missile License",
+    "source": "HELLDIVERS™",
+    "effect": "<div>Upon taking this core bonus, you are immediately licensed to use the Shredder Missile Strike. 1/mission, you may use the Request Shredder Missile Strike full action.</div>",
+    "description": "<blockquote><div><em>\"Side effects include shell shock, mutation, and/or death.\" - Armory Description</em></div></blockquote><div>Designed to cause miniature localized catastrophes and leave a lasting impact, the Shredder Micro-Nuclear Tactical missile is licensed to a select few who have proven themselves to be true heroes of democracy. Despite this, a Helldiver's ability to cause accidental death with one should never be underestimated.</div>",
+    "mounted_effect": "",
+    "actions": [
+      {
+        "name": "Request Shredder Missile Strike",
+        "activation": "Full",
+        "detail": "<div>Choose a Blast 4 area centered at a point within Range 15. All characters know where this area is, and on the start of your next turn, the Shredder Missile lands there, dealing 3d6+15 AP Explosive damage to anything caught in the blast.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "HD_CORE_SPECOPSTRAINING",
+    "name": "Specialized Training",
+    "source": "HELLDIVERS™",
+    "effect": "<div>When you take this Core Bonus, choose 1 NPC role (Ex. Striker, Artillery, etc.) . Against your chosen Role, you gain the following benefits:</div><ul><li><div>You a roll a critical on a roll higher than 19. If another rule already causes this, it extends to 18, and so on and so forth.</div></li><li><div>You gain +1 accuracy on attacks and tech attacks.</div></li><li><div>1/round, you may choose to deal 1d6 bonus Kinetic damage when you hit with an attack.</div></li></ul>",
+    "description": "<div>Many Helldiver regiments undergo specialized training in order to better approach certain threats.</div>",
+    "mounted_effect": ""
+  },
+  {
+    "id": "HD_CARDIO_ACCELERATOR",
+    "name": "Cardio Accelerator",
+    "source": "HELLDIVERS™",
+    "effect": "<div>You gain +1 speed, and may Boost as a free action 1/scene.</div>",
+    "description": "<div>Incorrectly called MASC (Myomer Accelerator Signal Circuitry) by some, the Cardio Accelerator is a neat little piece of tech that overcharges the actuators in your mech, allowing for increased dynamic performance. Don't worry about breaking anything, it's the HELLDIVERS™, there's always more.</div>",
+    "mounted_effect": "",
+    "bonuses": [
+      {
+        "id": "speed",
+        "val": 1,
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      }
+    ]
+  },
+  {
+    "id": "HD_HEAVY_ARMOUR",
+    "name": "Bastion Up-Armour Program",
+    "source": "HELLDIVERS™",
+    "effect": "<div>You gain 2 Armour, but lose 1 Speed. Additionally, your maximum Armour is increased up to 5.</div>",
+    "description": "<div>By welding some frontal armour plates from TD-110 Bastion tank destroyers to their mechs, some pilots like to increase the protection they offer. This usually comes at the cost of extra weight, but most will argue the pros outweigh the cons.</div>",
+    "mounted_effect": "",
+    "bonuses": [
+      {
+        "id": "armor",
+        "val": 2,
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      },
+      {
+        "id": "speed",
+        "val": -1,
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      }
+    ]
+  }
+]

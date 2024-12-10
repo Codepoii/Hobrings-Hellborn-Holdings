@@ -1,0 +1,15 @@
+[
+  {
+    "id": "edf-npct_horde",
+    "name": "HORDE",
+    "description": "Hordes represent small collections of troops, mechs, vehicles, subalterns, or other warfighting equipment capable of conducting group operations.",
+    "base_features": [
+      "edf-npcf_collective_force_horde",
+      "edf-npcf_group_occupation_horde",
+	  "edf-npcf_cooperative_nature_horde",
+      "edf-npcf_team_training_horde"
+    ],
+    "optional_features": [],
+    "power": 100
+  }
+]

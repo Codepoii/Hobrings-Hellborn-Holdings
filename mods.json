@@ -1,0 +1,207 @@
+[
+  {
+    "id": "EDFLASERPOI",
+    "name": "Laser Pointer",
+    "source": "EDF",
+    "license": "Euler",
+    "license_id": "EDFEULER",
+    "license_level": 1,
+    "effect": "<div>This weapon reduces difficulty by 2 before accuracy. Only one weapon may benefit from the effect of a Laser Pointer at a time.</div>",
+    "sp": "1",
+    "description": "<div>Many mech-scale weapons don't come with a laser guide to tell pilots where they're aiming. The EDF has solved this issue.</div>",
+    "allowed_types": [
+      "Rifle",
+      "Cannon",
+      "CQB"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "synergies": [
+      {
+        "locations": [
+          "weapon"
+        ],
+        "detail": "<div>This weapon reduces difficulty by 2 before accuracy.</div>",
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ]
+  },
+  {
+    "id": "EDFAIMBLOCK",
+    "name": "Barren Land Lock-On HUD",
+    "source": "EDF",
+    "license": "Thales",
+    "license_id": "EDFTHALES",
+    "license_level": 1,
+    "effect": "<div>This weapon may attack up to two different additional targets at a time. If it does so, the weapon loses any non-range pattern and each target hit takes half damage.</div>",
+    "sp": "2",
+    "description": "<div>The Barren Land Lock-On HUD is the pride of the EDF R&amp;D team, capable of improving munition-per-target and missile distribution efficiency by up to 50%.</div>",
+    "allowed_types": [
+      "Launcher",
+      "Nexus"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": []
+  },
+  {
+    "id": "EDFEUCLID",
+    "name": "Sargent-Class NHP",
+    "source": "EDF",
+    "license": "Heron",
+    "license_id": "EDFHERON",
+    "license_level": 3,
+    "effect": "<div>When this weapon makes any ranged attacks, it may make an attack against all characters in a Cone X area that is adjacent to at least one space you occupy, where X is equal to half of its longest listed Range, Line, or Threat.</div><div>Your mech gains the AI tag. If another NHP would cascade, this NHP will also automatically cascade to seize control of the weapon.</div><div>This NHP may only act using this weapon.</div>",
+    "sp": "3",
+    "description": "<div>While mounted in a weapon, Sargent-Class NHPs are perfectly capable of controlling an entire mech to target entire groups of hostile forces with a sort of accuracy that allows the weapon to deal its full damage potential to all of them. Due to its efficacy, it's restricted to the Storm 1 line of licensing and restrictions that require extreme background checks by even Union standards, an oddity for the EDF. Even more odd is the NHP's loyalty to its team even when unshackled, often following orders long after a pilot has passed out from whatever stressful thing was happening. Whether it's from pity, mercy, or simple dedication, EDF licensees who manage to pass all the required checks to receive a Sargent-Class NHP of their own are almost always more than satisfied with the performance they get with it.</div>",
+    "allowed_types": [
+      "Rifle",
+      "Cannon",
+      "Launcher",
+      "CQB",
+      "Nexus"
+    ],
+    "allowed_sizes": [
+      "Heavy",
+      "Main",
+      "Auxiliary"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Sargent Protocol",
+        "activation": "Protocol",
+        "detail": "<div>When Activated, you give control of this weapon to your NHP and this weapon may not be controlled by you, any other character, or any other NHP besides this Sargent-Class NHP. While this is active, this Sargent-Class NHP can only take the skirmish quick action 1/turn with the weapon it is attached to, and it may only skirmish against the nearest <span class=\"horus--subtle\">hostile</span> character or fire the weapon in a way that would allow it to hit the nearest <span class=\"horus--subtle\">hostile</span> character.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "EDFDEPTHSPOOL",
+    "name": "EDF Spool Stabilizer",
+    "source": "EDF",
+    "license": "Poincare Custom",
+    "license_id": "EDFPOINCUSTOM",
+    "license_level": 2,
+    "effect": "<div>You may spin up the EDF Spool Stabilizer as a quick action; while it is spinning, you are immobilized, you can only take actions against a single target this turn, and the attached weapon gains +1 to its attack roll.</div>",
+    "sp": "2",
+    "description": "<div>The EDF Spool Stabilizer is a pair of rapidly spinning cylinders whose centrifugal forces lock the rotation of the weapon in place, slowing aiming and making shots be and stay more accurate. The resulting spin is so violent that the cylinders rapidly need replacing after strenuous use.</div>",
+    "allowed_types": [
+      "Rifle",
+      "Cannon",
+      "Launcher",
+      "CQB"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy"
+    ],
+    "restricted_types": [],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [],
+    "actions": [
+      {
+        "name": "Spin Up Spool Stabilizer",
+        "activation": "Quick",
+        "detail": "<div>You spin up the EDF Spool Stabilizer until the end of the turn, immobilizing you until the end of your next turn, making it so you can only target one character with actions other than yourself this turn, and granting the attached weapon an additional +1 to their attack roll while it is spinning.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "synergies": [
+      {
+        "locations": [
+          "weapon"
+        ],
+        "detail": "<div>While the EDF Spool Stabilizer is spinning, this weapon gains an additional +1 to its attack roll.</div>",
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ]
+  },
+  {
+    "id": "HD_OBSIDIAN_BIGAMMO",
+    "name": "Twin Loader",
+    "source": "HELLDIVERS™",
+    "license": "Shakyas",
+    "license_id": "HD_SHAKYAS",
+    "license_level": 3,
+    "effect": "<div>1/round, when you miss an attack with this weapon, you may re-roll it against a different enemy within range, taking 1 heat while doing so. Attacks re-rolled this way do not deal bonus damage.</div>",
+    "sp": "2",
+    "description": "",
+    "allowed_types": [
+      "Rifle",
+      "Cannon",
+      "Launcher",
+      "CQB"
+    ],
+    "allowed_sizes": [],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": []
+  },
+  {
+    "id": "HD_Byblos_APMOD",
+    "name": "Thermobaric Warheads",
+    "source": "HELLDIVERS™",
+    "license": "Byblos",
+    "license_id": "HD_BYBLOS",
+    "license_level": 3,
+    "effect": "<div>This weapon gains Armour Piercing.</div>",
+    "sp": "1",
+    "description": "",
+    "allowed_sizes": [],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_ap",
+        "name": "ARMOR-PIERCING (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      }
+    ]
+  }
+]
