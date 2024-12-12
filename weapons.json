@@ -870,7 +870,7 @@
     "tags": [{"id": "tg_ap"}]
   },
   {
-    "id": "HD_BIGFUCKINGGUN",
+    "id": "HD_PREACHER_BIGFUCKINGGUN",
     "name": "C-700 Smite",
     "source": "HELLDIVERS™",
     "license": "Licchavis",
@@ -879,26 +879,46 @@
     "description": "",
     "mount": "Superheavy",
     "type": "Cannon",
-    "sp": 0,
+    "sp": 1,
     "profiles": [
       {
         "name": "Single-Shot Slug",
-        "effect": "<div>You may either fire a slug or an explosive round from the C-700 Smite.</div>",
+        "effect": "<div>You may fire this weapon using any profile.</div>",
         "barrage": true,
-        "skirmish": true,
+        "skirmish": false,
         "damage": [{"type": "Kinetic","val": "4d6"}],
         "range": [{"type": "Line","val": 20}],
-        "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_ap"},{"id": "tg_reliable","val": 8}]
+        "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_ap"},{"id": "tg_arcing"},{"id": "tg_reliable","val": 4}]
       },
       {
-        "name": "High Explosive",
-        "effect": "<div>You may either fire a slug or an explosive round from the C-700 Smite.</div>",
+        "name": "High Explosive Shell",
+        "effect": "<div>You may fire this weapon using any profile.</div>",
         "barrage": true,
-        "skirmish": true,
-        "damage": [{"type": "Explosive","val": "2d6+4"}],
-        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 1}],
+        "skirmish": false,
+        "damage": [{"type": "Explosive","val": "2d6"}],
+        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 3}],
         "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4}]
-      }
+      },
+	  {
+		"name": "Barrel",
+		"effect": "<div>You may fire this weapon using any profile.</div>",
+		"on_attack": "<div>Place a Size 1 piece of hard cover between you and the target.</div>",
+		"barrage": true,
+		"skirmish": false,
+		"damage": [{"type": "Explosive","val": "3d6"}],
+		"range": [{"type": "Range","val": 20}],
+		"tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_knockback", "val": 2}]
+	  },
+	  {
+		  "name": "Illumination Shell",
+		  "effect": "<div>You may fire this weapon using any profile.</div>",
+		  "on_attack": "<div>When firing with this profile, the affected area becomes covered in soft cover until the end of your next turn. Characters fully inside the area cannot draw line of sight outside of it.</div>",
+		  "barrage": true,
+		  "skirmish": false,
+		  "damage": [{"type": "Explosive","val": "1d6+4"}],
+		  "range": [{"type": "Range","val": 20},{"type": "Blast","val": 2}],
+		  "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4}]
+	  }
     ]
   }
 ]
