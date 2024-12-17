@@ -608,107 +608,60 @@
     "id": "EDFPOINCUSTOM",
     "source": "EDF",
     "license_level": 2,
-    "name": "Poincare Custom",
+    "name": "Poincare",
     "mechtype": [
       "Support"
     ],
-    "description": "<div>The Poincare Custom is a reward to pilots who pay for the Poincare license. It features many quality of life features that make piloting it considerably easier and more fulfilling, including a Comp/Con-assisted augmented reality suite to assist in both aiming and staving off boredom during downtime. What makes the Poincare Custom so unique compared to the original is the enhanced joint reinforcements allowing for more speed at the cost of power being drained from its sensor array.</div>",
+    "description": "<div>The Poincare is a reward to pilots who pay for the Archimedes license. It features many quality of life features that make piloting it considerably easier and more fulfilling, including a Comp/Con-assisted augmented reality suite to assist in both aiming and staving off boredom during downtime. What makes the Poincare so unique compared to the original is the enhanced joint reinforcements allowing for more speed at the cost of power being drained from its sensor array.</div>",
     "mounts": [
       "Main",
-      "Main"
+      "Main/Aux"
     ],
     "stats": {
       "size": 0.5,
       "structure": 4,
       "stress": 4,
       "armor": 0,
-      "hp": 7,
+      "hp": 9,
       "evasion": 10,
       "edef": 8,
       "heatcap": 6,
-      "repcap": 4,
-      "sensor_range": 10,
+      "repcap": 5,
+      "sensor_range": 20,
       "tech_attack": 0,
       "save": 11,
-      "speed": 6,
+      "speed": 5,
       "sp": 6
     },
     "traits": [
       {
-        "name": "Springlaunch High-Capacity Jump Systems",
-        "use": "",
-        "description": "<div>The Poincare Custom can only vertically jump, however it may jump upwards up to three times its size directly away from the surface it is currently standing on. It must make contact with another surface or immediately begin falling. Also, the Poincare does not take damage from falling.</div>"
-      },
-      {
         "name": "Clingrod Magnetizers",
         "use": "",
-        "description": "<div>The Poincare Custom treats all solid surfaces as flat ground for the purposes of movement; it can move across them normally instead of climbing. While doing so, it becomes Immobilized while it is knocked Prone, though it can still Stand Up to clear the condition.</div>"
+        "description": "<div>The Poincare treats all solid surfaces, including ceilings, as flat ground for the purposes of movement; it can move across them normally instead of climbing. While doing so, it becomes Immobilized while it is knocked Prone by other characters, though it can still Stand Up to clear the condition.</div>"
       },
       {
         "name": "Archon Stasis-Amp",
         "use": "",
-        "description": "<div>As a protocol, the Poincare Custom may divert power from its legs to its communications array, allowing the extra power to be used on one tech action.</div>",
+        "description": "<div>As a protocol, the Poincare may divert power from its legs to its communications array, allowing the extra power to be used on one tech action.</div>",
         "actions": [
           {
             "name": "Activate Archon Stasis-Amp",
             "activation": "Protocol",
-            "detail": "<div>Until the end of the round, you become Prone and you may choose one:</div><ul><li><div>Bolster as a free action.</div></li><li><div>Lock On as a free action.</div></li><li><div>Automatically scan a target as a free action.</div></li></ul>",
+            "detail": "<div>You may become Prone and choose one:</div><ul><li><div>Bolster as a free action. Your target may clear 2 heat or gain 2 overshield.</div></li><li><div>Lock On as a free action. That character gains 2 heat when the lockon is consumed.</div></li><li><div>Automatically search or scan a target as a free action.</div></li></ul>",
             "pilot": false,
-            "synergy_locations": [],
-            "tech_attack": false,
-            "frequency": "Unlimited",
-            "init": "",
-            "trigger": ""
-          }
-        ]
-      },
-      {
-        "name": "Hypersimplified Construction",
-        "use": "",
-        "description": "<div>While resting, the Poincare can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.</div>",
-        "bonuses": [
-          {
-            "id": "cheap_struct",
-            "val": "true",
-            "overwrite": false,
-            "replace": false
+            "tech_attack": false
           }
         ]
       }
     ],
     "core_system": {
       "name": "Gatling Gun",
-      "active_name": "Rainy Day Protocol",
-      "active_effect": "<p>Until the end of the Scene, your FK4847 Gatling Gun only produces 1 heat at the end of each round if it is spinning. Also, gain the Witness Free Action.</p>",
-      "activation": "Protocol",
+      "active_name": "Radio Flash",
+      "active_effect": "<p>You may perform the Scan quick action as a free action against any number of hostile characters within Sensors. Each character scanned this way may have an invade option applied to them by another friendly character. This does not count as a successful invade and does not apply heat on its own as if it was a successful invade.</p>",
+      "activation": "Full",
       "description": "<p>The Gatling Gun, labelled the FK4847 Gatling Gun, is a compact rotating-barrel rapid-fire \"siege rifle\" mounted to the bottom of all Depth Crawlers. While slow and unwieldy, its reinforcements allow it to be fired for a considerable length of time and with a considerable amount of power behind each round before the gun cooks the mech. Its overwhelming heat make it unfavorable for anything more complicated than a Poincare, however. Even Tokugawas would have trouble putting the FK4847 Gatling Gun to good use, so the EDF hasn't opted to sell it or an alternative version of it standalone.</p>",
       "deactivation": "",
       "use": "Scene",
-      "active_actions": [
-        {
-          "name": "Witness",
-          "activation": "Free",
-          "detail": "<p>You look at a target character. This does nothing on its own.</p>",
-          "cost": 0,
-          "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
-          "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
-        }
-      ],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
       "integrated": [
         "EDFDEPTHGATLING"
       ],
@@ -723,98 +676,62 @@
     "license_id": "EDFPOIN",
     "source": "EDF",
     "license_level": 0,
-    "name": "Poincare",
+    "name": "Archimedes",
     "mechtype": [
       "Support"
     ],
     "variant": "",
-    "description": "<div>The Poincare is the EDF's premier donationware combat assistant platform, available to any pilot with a valid license. While not as popular as the Everest, Sherman, or even Erdos, its popularity as a free and outside-the-norm mech is undeniable according to many pilots early in their career. Built from the ground-up for cave missions, the Poincare is a valuable addition to any fire team needing fire support, reconnaissance, spotting, or any number of other supportive maneuvers as it crawls across walls and ceilings.</div>",
+    "description": "<div>The Archimedes is the EDF's premier donationware combat assistant platform, available to any pilot with a valid license. While not as popular as the Everest, Sherman, or even Erdos, its popularity as a free and outside-the-norm mech is undeniable according to many pilots early in their career. Built from the ground-up for cave missions, the Archimedes is a valuable addition to any fire team needing fire support, reconnaissance, spotting, or any number of other supportive maneuvers as it crawls across walls and ceilings.</div>",
     "mounts": [
       "Main",
-      "Main"
+      "Main/Aux"
     ],
     "stats": {
       "size": 0.5,
       "structure": 4,
       "stress": 4,
       "armor": 0,
-      "hp": 7,
-      "evasion": 8,
+      "hp": 8,
+      "evasion": 10,
       "edef": 8,
       "heatcap": 6,
       "repcap": 5,
       "sensor_range": 20,
-      "tech_attack": 0,
+      "tech_attack": 1,
       "save": 10,
       "speed": 5,
       "sp": 7
     },
     "traits": [
       {
-        "name": "Springlaunch High-Capacity Jump Systems",
-        "use": "",
-        "description": "<div>The Poincare can only vertically jump, however it may jump upwards up to three times its size directly away from the surface it is currently standing on. It must make contact with another surface or immediately begin falling. Also, the Poincare does not take damage from falling.</div>"
-      },
-      {
         "name": "Clingrod Magnetizers",
         "use": "",
-        "description": "<div>The Poincare Custom treats all solid surfaces as flat ground for the purposes of movement; it can move across them normally instead of climbing. While doing so, it becomes Immobilized while it is knocked Prone, though it can still Stand Up to clear the condition.</div>"
+        "description": "<div>The Archimedes treats all solid surfaces, including ceilings, as flat ground for the purposes of movement; it can move across them normally instead of climbing. While doing so, it becomes Immobilized while it is knocked Prone by other characters, though it can still Stand Up to clear the condition.</div>"
       },
       {
         "name": "Archon Stasis-Amp",
         "use": "",
-        "description": "<div>As a protocol, the Poincare may divert power from its legs to its communications array, allowing the extra power to be used on one tech action.</div>",
+        "description": "<div>As a protocol, the Archimedes may divert power from its legs to its communications array, allowing the extra power to be used on one tech action.</div>",
         "actions": [
           {
             "name": "Activate Archon Stasis-Amp",
             "activation": "Protocol",
-            "detail": "<div>Until the end of the round, you become Prone and you may choose one:</div><ul><li><div>Bolster as a free action.</div></li><li><div>Lock On as a free action.</div></li><li><div>Automatically scan a target as a free action.</div></li></ul>",
+            "detail": "<div>You may become Prone and choose one:</div><ul><li><div>Bolster as a free action. Your target may clear 2 heat or gain 2 overshield.</div></li><li><div>Lock On as a free action. That character gains 2 heat when the lockon is consumed.</div></li><li><div>Automatically search or scan a target as a free action.</div></li></ul>",
             "pilot": false,
             "tech_attack": false
           }
-        ]
-      },
-      {
-        "name": "Hypersimplified Construction",
-        "use": "",
-        "description": "<div>While resting, the Poincare can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.</div>",
-        "bonuses": [
-          {
-            "id": "cheap_struct",
-            "val": "true",
-            "overwrite": false,
-            "replace": false
-          }
-        ]
+	]
       }
     ],
     "core_system": {
       "name": "Gatling Gun",
-      "active_name": "Rainy Day Protocol",
-      "active_effect": "<p>Until the end of the Scene, your FK4847 Gatling Gun only produces 1 heat at the end of each round if it is spinning. Also, gain the Witness Free Action.</p>",
-      "activation": "Protocol",
+      "active_name": "Radio Flash",
+      "active_effect": "<p>You may perform the Scan quick action as a free action against any number of hostile characters within Sensors. Each character scanned this way may have an invade option applied to them by another friendly character. This does not count as a successful invade and does not apply heat on its own as if it was a successful invade.</p>",
+      "activation": "Full",
       "description": "<p>The Gatling Gun, labelled the FK4847 Gatling Gun, is a compact rotating-barrel rapid-fire \"siege rifle\" mounted to the bottom of all Depth Crawlers. While slow and unwieldy, its reinforcements allow it to be fired for a considerable length of time and with a considerable amount of power behind each round before the gun cooks the mech. Its overwhelming heat make it unfavorable for anything more complicated than a Poincare, however. Even Tokugawas would have trouble putting the FK4847 Gatling Gun to good use, so the EDF hasn't opted to sell it or an alternative version of it standalone.</p>",
       "deactivation": "",
       "use": "Scene",
-      "active_actions": [
-        {
-          "name": "Witness",
-          "activation": "Free",
-          "detail": "<p>You look at a target character. This does nothing on its own.</p>",
-          "cost": 0,
-          "pilot": false,
-          "tech_attack": false
-        }
-      ],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
+      "active_actions": [],
       "integrated": [
         "EDFDEPTHGATLING"
       ],

@@ -374,31 +374,12 @@
     "type": "Rifle",
     "no_synergy": true,
     "sp": 0,
-    "profiles": [
-      {
-        "name": "Idle Mode",
-        "effect": "<div>You may spin up the FK4847 Gatling Gun's barrels as a quick action. Otherwise, this weapon may not make attacks.</div>",
-        "actions": [
-          {
-            "name": "Spin Up FK4847 Gatling Gun",
-            "activation": "Quick",
-            "detail": "<div>You spin up the FK4847 Gatling Gun and may use its \"Spin-Up Mode\" profile.</div>",
-            "pilot": false,
-            "tech_attack": false
-          }
-        ]
-      },
-      {
-        "name": "Spin-Up Mode",
-        "effect": "<div>While Spinning, you must attack any character you target using any other action with this weapon as a free action, even if it isn't within this weapon's range; you instead attack the most direct and nearest space within range. You may use this free action any number of times, including using this weapon to trigger Overwatch. Otherwise, this weapon may not make normal attacks. It doesn't benefit from or trigger your talents, nor may it benefit from or consume Lock On.</div><div>All attacks from this weapon count as being Line in addition to Threat, where Line always originates from the mech to the target.</div><div>While Spinning, gain 2 Heat at the end of each round.</div><div>You may cease this effect as a protocol.</div>",
-        "barrage": true,
-        "skirmish": true,
-        "on_attack": "<div>You also attack all characters in a Line between you and your target.</div>",
-        "damage": [{"type": "Kinetic","val": 1}],
-        "range": [{"type": "Threat","val": 8}],
-        "tags": [{"id": "tg_ap"},{"id": "tg_inaccurate"}]
-      }
-    ]
+    "effect": "<div>This weapon cannot be fired normally. Instead, each time you perform a hostile action other than firing this weapon within this weapon’s range, you may attack that action’s target with this weapon as a free action. You take 2 heat at the end of each round you fire this weapon. This weapon cannot benefit from or consume lockon, nor can it benefit from systems or talents.</div>",
+    "barrage": false,
+    "skirmish": false,
+    "damage": [{"type": "Kinetic","val":1}],
+    "range": [{"type": "Line","val":8}],
+    "tags": [{"id": "tg_reliable","val": 1},{"id": "tg_ap"}]
   },
   {
     "id": "EDFDEPTHSNIPER",
@@ -650,11 +631,11 @@
     "license": "",
     "license_id": "",
     "license_level": 0,
-    "description": "<div>Thought to have led to the Vogel Team’s success suppressing their 500th terrorist attack, the Monster is an immortalized and celebrated tool among EDF personnel and licensees across Union space. Its immense power output allows it to blast through cover and obstructions.</div>",
+    "description": "<div>Thought to have led to the Vogel Team’s success suppressing their 500th terrorist attack, the Peacemaker is an immortalized and celebrated tool among EDF personnel and licensees across Union space. Its immense power output allows it to blast through cover and obstructions.</div>",
     "mount": "Heavy",
     "type": "Cannon",
     "sp": 0,
-	"on_hit": "<div>The target cannot draw line of sight beyond adjacent spaces until the start of its next turn.</div>",
+	"on_hit": "<div>The target cannot draw line of sight beyond adjacent spaces until the end of its next turn.</div>",
 	"on_attack": "<div>You are knocked back 1 space.</div>",
     "barrage": true,
     "skirmish": true,
@@ -748,7 +729,7 @@
     "license": "Byblos",
     "license_id": "HD_BYBLOS",
     "license_level": 2,
-    "description": "<div>An evolution of a classic, proven concept, the MG-11 is a staple of the HELLDIVERS™ mech arsenal, used when the typical GMS Assault Rifle or SSC Rail Rifle won't cut it. Though less reliable, it comes with superior firepower at the cost of reduced mobility. Miniguns are heavy, after all.</div>",
+    "description": "<div>An evolution of a classic, proven concept, the MG-11 is a staple of the HELLDIVERS™ mech arsenal, used when the typical GMS Assault Rifle or SSC Rail Rifle won't cut it. Though less reliable, it comes with superior firepower.</div>",
     "mount": "Main",
     "type": "Cannon",
     "sp": 0,
@@ -870,35 +851,55 @@
     "tags": [{"id": "tg_ap"}]
   },
   {
-    "id": "HD_BIGFUCKINGGUN",
+    "id": "HD_PREACHER_BIGFUCKINGGUN",
     "name": "C-700 Smite",
     "source": "HELLDIVERS™",
     "license": "Licchavis",
     "license_id": "HD_LICCHAVIS",
     "license_level": 3,
-    "description": "",
+    "description": "<div>The C-700 Smite is a variable geometry canister launching coil-railgun hybrid that fires a variety of printed-in-gun munitions.</div>",
     "mount": "Superheavy",
     "type": "Cannon",
-    "sp": 0,
+    "sp": 1,
     "profiles": [
       {
         "name": "Single-Shot Slug",
-        "effect": "<div>You may either fire a slug or an explosive round from the C-700 Smite.</div>",
+        "effect": "<div>You may fire this weapon using any profile.</div>",
         "barrage": true,
-        "skirmish": true,
+        "skirmish": false,
         "damage": [{"type": "Kinetic","val": "4d6"}],
         "range": [{"type": "Line","val": 20}],
-        "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_ap"},{"id": "tg_reliable","val": 8}]
+        "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_ap"},{"id": "tg_arcing"},{"id": "tg_reliable","val": 4}]
       },
+	  {
+		"name": "Barrel",
+		"effect": "<div>You may fire this weapon using any profile.</div>",
+		"on_attack": "<div>Place a Size 1 piece of hard cover between you and the target.</div>",
+		"barrage": true,
+		"skirmish": false,
+		"damage": [{"type": "Explosive","val": "3d6"}],
+		"range": [{"type": "Range","val": 20}],
+		"tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_knockback", "val": 2}]
+	  },
       {
-        "name": "High Explosive",
-        "effect": "<div>You may either fire a slug or an explosive round from the C-700 Smite.</div>",
+        "name": "High Explosive Shell",
+        "effect": "<div>You may fire this weapon using any profile.</div>",
         "barrage": true,
-        "skirmish": true,
-        "damage": [{"type": "Explosive","val": "2d6+4"}],
-        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 1}],
+        "skirmish": false,
+        "damage": [{"type": "Explosive","val": "2d6"}],
+        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 3}],
         "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4}]
-      }
+      },
+	  {
+		  "name": "Illumination Shell",
+		  "effect": "<div>You may fire this weapon using any profile.</div>",
+		  "on_attack": "<div>When firing with this profile, the affected area becomes covered in soft cover until the end of your next turn. Characters fully inside the area cannot draw line of sight outside of it.</div>",
+		  "barrage": true,
+		  "skirmish": false,
+		  "damage": [{"type": "Explosive","val": "1d6"}],
+		  "range": [{"type": "Range","val": 20},{"type": "Blast","val": 3}],
+		  "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4}]
+	  }
     ]
   }
 ]
