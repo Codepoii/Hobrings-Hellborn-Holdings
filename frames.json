@@ -1,16 +1,15 @@
 [
   {
-    "id": "EDFEULER",
-    "license_id": "EDFEULER",
-    "source": "EDF",
+    "id": "AAFEULER",
+    "license_id": "AAFEULER",
+    "source": "AAF",
     "license_level": 2,
     "name": "Euler",
     "mechtype": [
       "Striker",
       "Artillery"
     ],
-    "variant": "",
-    "description": "<div>The Euler features mobility-improving boosters to counteract recoil and, in bursts, hover and fly to reach new positions many mechs of its caliber can't reach. It has a fairly simple and straight-forward approach that makes the Euler a popular choice for EDF operatives and pilots, with its \"mobile firepower\" policy allowing it to field firepower on a rapid and maneuverable chassis. While Nixes are the most common EDF frame, most of them are in direct service to the EDF or contracted out to Far-Field teams so seeing them is a privilege typically only afforded to EDF licensees or their enemies.</div>",
+    "description": "<div>The Euler features mobility-improving boosters to counteract recoil and, in bursts, hover and fly to reach new positions many mechs of its caliber can't reach. It has a fairly simple and straight-forward approach that makes the Euler a popular choice for AAF operatives and pilots, with its \"mobile firepower\" policy allowing it to field firepower on a rapid and maneuverable chassis. While Eulers are the most common AAF frame, most of them are in direct service to the AAF or contracted out to Far-Field teams so seeing them is a privilege typically only afforded to AAF employees or their enemies.</div>",
     "mounts": [
       "Main",
       "Main",
@@ -23,7 +22,7 @@
       "stress": 4,
       "armor": 0,
       "hp": 8,
-      "evasion": 10,
+      "evasion": 8,
       "edef": 8,
       "heatcap": 5,
       "repcap": 4,
@@ -35,19 +34,16 @@
     },
     "traits": [
       {
-        "name": "EDF Integrated Jump Jet System",
-        "use": "",
+        "name": "AAF Integrated Jump Jet System",
         "description": "<div>The Euler can hover when it moves or boosts; however, it must end its movement on the ground or another solid surface, or else begin falling at the end of its turn.</div>"
       },
       {
         "name": "Hotload Protocol",
-        "use": "",
         "description": "<div>At the end of the Euler’ turn, if it isn’t Engaged it may reload one weapon with the Loading tag if it has not performed a ranged attack this turn.</div>"
       },
       {
         "name": "Expansive Armaments",
-        "use": "",
-        "description": "<div>The Euler has an addition integrated Aux mount. When a weapon in a Main mount is used to Skirmish, the weapon in the mount provided by this trait may be fired immediately after as a free action, but it may not deal bonus damage.</div>"
+        "description": "<div>The Euler has an addition integrated Aux mount that may not be modified. When a weapon in a Main mount is used to Skirmish, the weapon in the mount provided by this trait may be fired immediately after as a free action, but it may not deal bonus damage.</div>"
       }
     ],
     "core_system": {
@@ -55,38 +51,24 @@
       "active_name": "Twin Mounting",
       "active_effect": "<p>For the rest of the scene, you do not suffer penalties from being engaged, you gain immunity to impaired, and 1/round you may Lock On as a free action.</p>",
       "activation": "Protocol",
-      "description": "<p>The Euler exoskeleton platform was built from the ground up so any EDF soldier could use it, leading to massive improvements to accuracy and target leading in spite of the overwhelming size of the mounts used on the Euler.</p>",
-      "deactivation": "",
-      "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "<p></p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      "description": "<p>The Euler exoskeleton platform was built from the ground up so any AAF soldier could use it, leading to massive improvements to accuracy and target leading in spite of the overwhelming size of the mounts used on the Euler.</p>",
+      "deactivation": "None",
+      "use": "Encounter"
     },
-    "image_url": "https://pbs.twimg.com/media/DlCBrhoUYAE71Jb?format=jpg&name=large",
+    "image_url": "",
     "y_pos": 18
   },
   {
-    "id": "EDFPYTHAG",
-    "license_id": "EDFPYTHAG",
-    "source": "EDF",
+    "id": "AAFPYTHAG",
+    "license_id": "AAFPYTHAG",
+    "source": "AAF",
     "license_level": 2,
     "name": "Pythagoras",
     "mechtype": [
       "Defender",
       "Controller"
     ],
-    "variant": "",
-    "description": "<div>The dark horse of the EDF's mech fleet, the Pythagoras is the product of a rogue development team attempting to develop an easily stored model of mech capable of being tightly packed in space ships to spearhead offenses into hostile space where printers would be scarce and backups would be necessary. What was produced from this SecComm era program was an armored beast of a mech as space was wasted shaping the mech into its iconic cubic shape, this wasted space leading to a level of armor and joint reinforcement not found on most other EDF mechs.</div>",
+    "description": "<div>The dark horse of the AAF's mech fleet, the Pythagoras is the product of a rogue development team attempting to develop an easily stored model of mech capable of being tightly packed in space ships to spearhead offenses into hostile space where printers would be scarce and backups would be necessary. What was produced from this inter-corporate program was an armored beast of a mech as space was wasted shaping the mech into its iconic cubic shape, this wasted space leading to a level of armor and joint reinforcement not found on most other mechs.</div>",
     "mounts": [
       "Flex",
       "Flex"
@@ -110,28 +92,26 @@
     "traits": [
       {
         "name": "Ultra Compact Form",
-        "use": "",
         "description": "<div>The Pythagoras counts as size 1/2 when lifted by, carried by, or while mounting other mechs or vehicles (e.g. with a Ship NPC's Transport Trait or the Mule Harness' effect.)</div>"
       },
       {
-        "name": "EDF Integrated Jump Jet System",
-        "use": "",
+        "name": "AAF Integrated Jump Jet System",
+        "use": "Turn",
         "description": "<div>The Pythagoras can hover when you move or boost; however, it must end its movement on the ground or another solid surface, or else begin falling at the end of its turn.</div>"
       },
       {
         "name": "Panelled Plating",
-        "use": "",
-        "description": "<div>The Pythagoras can deploy drones on itself when it deploys them. If it does so, the drones occupy the same space as the Pythagoras, copy the Pythagoras's movements exactly, and gain Hard Cover against all attacks until they move into a different space.</div>"
+        "description": "<div>The Pythagoras can deploy drones on itself when it deploys them. If it does so, the drones occupy the same space as the Pythagoras, copy the Pythagoras' movements exactly, and gain Hard Cover against all attacks until they move into a different space. These drones count for the combined size of the Pythagoras when it is mounted, carried or lifted, or dragged.</div>"
       }
     ],
     "core_system": {
       "name": "Emergency Relay",
       "active_name": "Overdrive",
-	"active_effect": "<p>Until the end of the turn, you:</p><ul><li><p>may boost as a free action 1/round;</p></li><li><p>gain immunity to Prone;</p></li><li><p>automatically succeed all saves you are forced to make;</p></li><li><p>gain up to 1d6 heat from Overcharge;</p></li><li><p>load all Loading weapons as a free action.</p></li></ul><hr><p>This action is <strong>Efficient</strong> and refunds 1 CP at the end of scenes in which it is used.</p>",
+	    "active_effect": "<p>Until the end of the turn, you:</p><ul><li><p>may boost as a free action 1/round;</p></li><li><p>gain immunity to Prone;</p></li><li><p>automatically succeed all saves you are forced to make;</p></li><li><p>gain up to 1d6 heat from Overcharge;</p></li><li><p>load all Loading weapons as a free action.</p></li></ul><hr>",
       "activation": "Protocol",
       "description": "<p>The Pythagoras is known for its unique ability to compartmentalize attachments and itself. What isn't as well known for is its ability to supercharge parts of itself to perform at optimum capacity.</p>",
-      "deactivation": null,
-      "use": null,
+      "deactivation": "None",
+      "use": "Turn",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
@@ -149,7 +129,6 @@
           "synergy_locations": [],
           "tech_attack": false,
           "frequency": "1/round",
-          "init": "",
           "trigger": "<p>A drone adjacent to you under your control receives damage.</p>"
         }
       ],
@@ -161,21 +140,20 @@
       "special_equipment": [],
       "tags": []
     },
-    "image_url": "https://www.d3p.co.jp/edfir/assets/img/soldier/08_chr_sp.png",
-    "y_pos": "14"
+    "image_url": "",
+    "y_pos": 3
   },
   {
-    "id": "EDFTHALES",
-    "license_id": "EDFTHALES",
-    "source": "EDF",
+    "id": "AAFTHALES",
+    "license_id": "AAFTHALES",
+    "source": "AAF",
     "license_level": 2,
     "name": "Thales",
     "mechtype": [
       "Artillery",
       "Controller"
     ],
-    "variant": "",
-    "description": "<div>The Thales is the penultimate showcase of the EDF's elite's battle strategy. Effective, accurate, and capable firepower. Often described as \"a walking cockpit with guns,\" the Thales is a simpler side of the EDF's defensive capabilities. Simple, overwhelming firepower. The high platform afforded to it by its heavy, massive legs allows it to see further than many other mechs, and its advanced Multi-Pit system allows for a full fireteam to be posted in one of these mechs, each man controlling a single weapon independently while the pilot focuses on controlling the mech and keeping it stable for the rest of the team.</div>",
+    "description": "<div>The Thales is the penultimate showcase of the AAF's elite's battle strategy. Effective, accurate, and capable firepower. Often described as \"a walking cockpit with guns,\" the Thales is a simpler side of the AAF's defensive capabilities. Simple, overwhelming firepower. The high platform afforded to it by its heavy, massive legs allows it to see further than many other mechs, and its advanced Multi-Pit system allows for a full fireteam to be posted in one of these mechs, each man controlling a single weapon independently while the pilot focuses on controlling the mech and keeping it stable for the rest of the team.</div>",
     "mounts": [
       "Flex",
       "Heavy"
@@ -199,12 +177,10 @@
     "traits": [
       {
         "name": "Slow",
-        "use": "",
         "description": "<div>The Thales receives +1 difficulty on Agility checks and saves.</div>"
       },
       {
         "name": "Gun Carriage",
-        "use": "",
         "description": "<div>The Thales has several disconnected compartments that house remote controls for each weapon mount. For each weapon mount this mech has, it has space for one additional non-Mech character of Size 1/2 to ride as a passenger. While inside the mech, they cannot suffer any effect from outside or be targeted by attacks, as if they were a pilot.</div>"
       }
     ],
@@ -212,13 +188,10 @@
       "name": "Toronto Corrective Stabilization System",
       "active_name": "TCSS Ultrastabilization Mode",
       "active_effect": "<p>For the rest of the scene, when you perform an Invade Quick Tech action, you may apply Lock On to that character as a Free Action after the Invade resolves.</p>",
-      "activation": "Full",
-      "description": "<p>The hydraulics found in the Thales are second to none in terms of reliability. This is because they are hardly forced to output much power for movement, due to the complex nature of the joints required to house so many heavy weapons capable of outputting so much recoil. Despite its strict tactical niche, the sheer stability provided by the Thales as a weapons platform allows it to be a favorite with most EDF forces. While it's less functional for the cavalry use pilots are commonly associated with, the range of the guns capable of being used on the Thales offsets its lack of agility.</p>",
-      "deactivation": "",
-      "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
+      "activation": "Protocol",
+      "description": "<p>The hydraulics found in the Thales are second to none in terms of reliability. This is because they are hardly forced to output much power for movement, due to the complex nature of the joints required to house so many heavy weapons capable of outputting so much recoil. Despite its strict tactical niche, the sheer stability provided by the Thales as a weapons platform allows it to be a favorite with most AAF forces. While it's less functional for the cavalry use pilots are commonly associated with, the range of the guns capable of being used on the Thales offsets its lack of agility.</p>",
+      "deactivation": "None",
+      "use": "Encounter",
       "passive_name": "Crewed Guns",
       "passive_effect": "<p>Passengers in the Thales take their turns during the Thales’ turns, but may not Overcharge.</p><p>1/round, for each passenger in the Thales, that passenger may fire one ranged weapon on the Thales against a hostile character within that weapon’s Range. Weapons fired this way gain +2 difficulty.</p><p>If you did not move last turn, including involuntary movement, and did not take the Skirmish or Barrage action, your passengers gain +1 accuracy until the end of your turn.</p>",
       "passive_actions": [
@@ -232,33 +205,23 @@
           "range": [],
           "synergy_locations": [],
           "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
+          "frequency": "Unlimited"
         }
-      ],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
-    "image_url": "https://i.ytimg.com/vi/g_O6VFYqUNk/mqdefault.jpg",
-    "y_pos": 5
+    "image_url": "",
+    "y_pos": 4
   },
   {
-    "id": "EDFHERON",
-    "license_id": "EDFHERON",
-    "source": "EDF",
+    "id": "AAFHERON",
+    "license_id": "AAFHERON",
+    "source": "AAF",
     "license_level": 2,
     "name": "Heron",
     "mechtype": [
-      "Defender",
-      "Support"
+      "Striker",
+      "Defender"
     ],
-    "variant": "",
     "description": "<div>The Heron is a massive, towering frame designed and built to withstand combat against other massive or powerful mechs while still being able to retaliate against lighter mechs. However, its extreme size also makes it unwieldy and easy to topple. Instead of being armed with an unfathomable array of weaponry or communications access to request firepower only handled by ships, it is armed with its notably huge arms that allow it to do catastrophic damage to mechs, vehicles, and buildings alike, even capable of damaging smaller ships with its sheer kinetic power.</div>",
     "mounts": [
       "Flex",
@@ -269,10 +232,10 @@
       "structure": 3,
       "stress": 4,
       "armor": 2,
-      "hp": 13,
-      "evasion": 6,
+      "hp": 9,
+      "evasion": 10,
       "edef": 6,
-      "heatcap": 6,
+      "heatcap": 5,
       "repcap": 3,
       "sensor_range": 10,
       "tech_attack": 0,
@@ -283,36 +246,25 @@
     "traits": [
       {
         "name": "Supercolossal",
-        "use": "",
-        "description": "<div>The Heron can move over and end its turn while sharing its space with characters or terrain that is at least one size smaller than itself, and vice-versa. Additionally, the Heron can't be pushed, pulled, knocked Prone, or knocked back by smaller characters.</div>"
+        "description": "<div>The Heron can move over and end its turn while sharing its spaces with characters or terrain that is at least one size smaller than itself, and vice-versa as long as the Heron is at least one size larger, as long as the Heron occupies four unoccupied spaces.</div>"
       },
       {
-        "name": "Lumbering",
-        "use": "",
-        "description": "<div>The Heron receives +1 difficulty on Agility checks and saves.</div>",
+        "name": "Unfathomably Massive",
+        "description": "<div>The Heron receives +1 difficulty on all non-Systems checks and saves.</div>",
         "synergies": [
           {
             "locations": [
-              "agility"
+              "agility",
+              "hull",
+              "engineering"
             ],
-            "detail": "<div>The Heron receives +1 difficulty on all agility checks and saves it must make.</div>"
+            "detail": "<div>The Heron receives +1 difficulty on all non-Systems checks and saves it must make.</div>"
           }
         ]
       },
       {
-        "name": "Grand Slam",
-        "use": "",
-        "description": "<div>1/round, when the Heron knocks a character into a wall, mech, or other obstruction that would cause it to stop moving, it may force its target to pass a HULL save or take 1d6 Explosive Damage, become Immobilized until the end of their next turn, be knocked Prone, and deal 10AP Kinetic damage to the obstruction if it isn’t a character. On a success, they take half damage, are knocked Prone, and deal 10AP Kinetic damage to the obstruction if it isn’t a character.</div>",
-        "synergies": [
-          {
-            "locations": [
-              "weapon",
-              "ram",
-              "improvised_attack"
-            ],
-            "detail": "<div>1/round, when the Heron knocks a character into a wall, mech, or other obstruction that would cause it to stop moving, it may force its target to pass a HULL save or take 1d6 Explosive Damage, become Immobilized until the end of their next turn, be knocked Prone, and deal 10AP Kinetic damage to the obstruction if it isn’t a character. On a success, they take half damage, are knocked Prone, and deal 10AP Kinetic damage to the obstruction if it isn’t a character.</div>"
-          }
-        ]
+        "name": "Insurmountable Armor",
+        "description": "<div>Attacks against the Heron have their attack bonus and accuracy reduced to 0 after difficulty.</div>"
       }
     ],
     "core_system": {
@@ -321,8 +273,8 @@
       "active_effect": "<p>For the rest of the scene, you become immune to Shredded, may use your Grand Slam trait 2/round, and 1/round you may either;</p><ul><li><p>boost as a free action, or</p></li><li><p>stand up as a free action.</p><p>You may only choose one of these options each round.</p></li></ul>",
       "activation": "Protocol",
       "description": "<p>Few things earn the right to be called a 'War Platform' more than the Heron. While many frames are wonderful, powerful, mighty, or even magical, few can go into an active warzone and declare itself the winner and then, only after that declaration, set out to achieve it. A one-on-one fight against a Heron can prove to be a tedious affair, and hard feelings are rare due to the skill required both to properly control the Heron and to fight against it.</p>",
-      "deactivation": "",
-      "use": "Scene",
+      "deactivation": "None",
+      "use": "Encounter",
       "active_actions": [
         {
           "name": "Reinforced Boost",
@@ -330,13 +282,8 @@
           "detail": "<p>You may move a number of spaces equal to your Speed.</p>",
           "cost": 0,
           "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
           "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
+          "frequency": "Unlimited"
         },
         {
           "name": "Reinforced Stand",
@@ -344,52 +291,36 @@
           "detail": "<p>You may Stand Up from being Prone without forgoing your normal movement.</p>",
           "cost": 0,
           "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
           "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
+          "frequency": "Unlimited"
         }
       ],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Reinforced Frame",
-      "passive_effect": "<p>1/scene, if you would lose structure and roll on the structure loss table, you may double the result of one dice in the roll. If this would result in a roll result above 6, you are not impaired and only lose structure.</p>",
-      "passive_actions": [],
-      "passive_bonuses": [],
+      "passive_effect": "<p>Your mech has -1 structure; 1/scene, if you would lose structure and roll on the structure loss table, you may double the result of one dice in the roll. If this would result in a roll result above 6, you are not impaired and only lose structure.</p>",
       "passive_synergies": [
         {
           "locations": [
             "structure"
           ],
-          "detail": "<p>1/scene, if you would lose structure and roll on the structure loss table, you may double the result of one dice in the roll. If this would result in a roll result above 6, you are not impaired and simply lose structure.</p>",
-          "weapon_types": [],
-          "weapon_sizes": [],
-          "system_types": []
+          "detail": "<p>1/scene, if you would lose structure and roll on the structure loss table, you may double the result of one dice in the roll. If this would result in a roll result above 6, you are not impaired and simply lose structure.</p>"
         }
-      ],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
-    "image_url": "https://cdn.vox-cdn.com/thumbor/a5HI_Xn3Ohy9fAXAzT7Ey-pKf4k=/480x0/cdn.vox-cdn.com/uploads/chorus_asset/file/1061472/edf_41_ps4_009.0.jpg",
-    "y_pos": 5
+    "image_url": "",
+    "y_pos": 4
   },
   {
-    "id": "EDFGAUSS",
-    "license_id": "EDFGAUSS",
-    "source": "EDF",
+    "id": "AAFGAUSS",
+    "license_id": "AAFGAUSS",
+    "source": "AAF",
     "license_level": 2,
     "name": "Gauss",
     "mechtype": [
       "Striker"
     ],
-    "variant": "",
-    "description": "<div>The Gauss pattern frame is the EDF's token small frame, and arguably the EDF's most efficient frame in general. Its lack of size is made up for in sheer speed and durability, and its wide range of equipment allows the Gauss to take on roles often unfriendly to other small frames such as the Caliban or the Atlas.</div>",
+    "description": "<div>The Gauss pattern frame is the AAF's token small frame, and arguably the AAF's most efficient frame in general. Its lack of size is made up for in sheer speed and durability, and its wide range of equipment allows the Gauss to take on roles often unfriendly to other small frames such as the Caliban or the Atlas.</div>",
     "mounts": [
       "Main",
       "Heavy"
@@ -413,27 +344,21 @@
     "traits": [
       {
         "name": "Riposte",
-        "use": "",
-        "description": "<div>1/round, when the Gauss is impaired, jammed, knocked prone, or immobilized, it may roll an agility check and, if it succeeds, it immediately clears the condition.</div>"
+        "description": "<div>1/round, when the Gauss is impaired or knocked prone it may roll an agility check and, if it succeeds, it immediately moves 1 space in any direction and clears the condition.</div>"
       },
       {
         "name": "Reflector",
-        "use": "",
-        "description": "<div>When the Gauss Braces, it takes 1 AP damage and reduces incoming damage to 0 instead of gaining Resistance and, if it is Bracing against a ranged attack, it changes the target of the attack to the Attacker, removing all Accuracy and Difficulty before rolling to hit.</div>"
+        "description": "<div>When the Gauss Braces, it takes 2 AP damage and reduces incoming damage to 0 instead of gaining Resistance and, if it is Bracing against a ranged attack, it changes the target of the attack to the Attacker, removing all Accuracy and Difficulty before rolling to hit.</div>"
       },
       {
         "name": "Exposed Reactor",
-        "use": "",
         "description": "<div>The Gauss receives +1 Difficulty on ENGINEERING checks and saves.</div>",
         "synergies": [
           {
             "locations": [
               "engineering"
             ],
-            "detail": "<div>The Gauss receives +1 Difficulty on ENGINEERING checks and saves.</div>",
-            "weapon_types": [],
-            "weapon_sizes": [],
-            "system_types": []
+            "detail": "<div>The Gauss receives +1 Difficulty on ENGINEERING checks and saves.</div>"
           }
         ]
       }
@@ -444,8 +369,8 @@
       "active_effect": "<p>At the end of your turn, you gain the following benefits for the rest of the scene and may immediately spend 1 repair to restore your HP to max:</p><ul><li><p>You may take two quick actions after you brace.</p></li><li><p>You may boost 1/round as a free action.</p></li><li><p>When you overcharge, you take a max of 3 heat.</p></li><li><p>You gain +1 accuracy on Hull checks and saves.</p></li></ul>",
       "activation": "Full",
       "description": "<p>The Grim Reaper Drive was designed in honor of the original test pilots of the Gauss frame, and is what dictates the Gauss's status as a threat. Its power is so potent that a rumor is passed around; the only thing more dangerous than a Gauss with its drive engaged is a Gauss who has yet to engage its drive. While the names and faces of the original Grim Reapers have been lost to time, the names and faces of Gauss pilots forced to engage their Grim Reaper drives are often carved into the memory of those forced to engage them.</p>",
-      "deactivation": "",
-      "use": "Scene",
+      "deactivation": "None",
+      "use": "Encounter",
       "active_actions": [
         {
           "name": "Grim Boost",
@@ -453,13 +378,8 @@
           "detail": "<p>Move up to a number of spaces equal to your Speed.</p>",
           "cost": 0,
           "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
           "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
+          "frequency": "Unlimited"
         }
       ],
       "active_bonuses": [],
@@ -468,46 +388,29 @@
           "locations": [
             "overcharge"
           ],
-          "detail": "<p>When you overcharge, you take a max of 3 heat.</p>",
-          "weapon_types": [],
-          "weapon_sizes": [],
-          "system_types": []
+          "detail": "<p>When you overcharge, you take a max of 3 heat.</p>"
         },
         {
           "locations": [
             "hull"
           ],
-          "detail": "<p>You gain +1 accuracy on Hull checks and saves.</p>",
-          "weapon_types": [],
-          "weapon_sizes": [],
-          "system_types": []
+          "detail": "<p>You gain +1 accuracy on Hull checks and saves.</p>"
         }
-      ],
-      "passive_name": "",
-      "passive_effect": "",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
-    "image_url": "https://fanboydestroy.files.wordpress.com/2013/12/d3p-360-tk-01-image122_fencer.png",
-    "y_pos": 27
+    "image_url": "",
+    "y_pos": 4
   },
   {
-    "id": "EDFERDOS",
-    "license_id": "EDFERDOS",
-    "source": "EDF",
+    "id": "AAFERDOS",
+    "license_id": "AAFERDOS",
+    "source": "AAF",
     "license_level": 2,
     "name": "Erdos",
     "mechtype": [
       "Balanced"
     ],
-    "variant": "",
-    "description": "<div>The Erdos is a large bipedal powered armor suit, one of the simpler models produced en masse during their tenure as a SecComm defense corporation and generally far less offensively capable than their Euler counterparts. Where they fail in maneuverability and firepower, however, they excel in sustained presence as pilots do all sorts of things to keep their hardy Vegaltas in the fight no matter how long it goes on, how hard it gets, or how far it gets away from them.</div>",
+    "description": "<div>The Erdos is a large bipedal powered armor suit, one of the simpler models produced for the defense of Atacama and generally far less offensively capable than their Euler counterparts. Where they fail in maneuverability and firepower, however, they excel in sustained presence as pilots do all sorts of things to keep their hardy Erdos in the fight no matter how long it goes on, how hard it gets, or how far it gets away from them.</div>",
     "mounts": [
       "Aux/Aux",
       "Flex",
@@ -532,12 +435,10 @@
     "traits": [
       {
         "name": "Sandlot Applicators",
-        "use": "",
         "description": "<div>1/scene, the Erdos may do one of the following:</div><ul><li><div>Reload all Loading Weapons.</div></li><li><div>Boost as a free action.</div></li><li><div>Perform an additional quick action if it braced during its last turn.</div></li><li><div>Immediately break a grapple.</div></li></ul>"
       },
       {
         "name": "Hypersimplified Construction",
-        "use": "",
         "description": "<div>While resting, the Erdos can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.</div>",
         "bonuses": [
           {
@@ -555,11 +456,8 @@
       "active_effect": "<p>For the rest of the mission, the integrated NHP is, against its will and your better judgement, nigh-irrevocably given control of the mech. Your turn immediately ends and it immediately takes its turn following the activation. While this effect is active, the NHP may benefit from your talents, the Erdos may not be shut down for any reason, and the pilot may overcharge the mech as normal at half cost and twice per round. You may end the effect and take back control of the mech by succeeding a Systems check or as a part of any rest. As you have disabled the mech's shutdown override, the Erdos's active cannot be activated again and you may not benefit from the Erdos's core passive until your next full repair.</p>",
       "activation": "Full",
       "description": "<p>The Erdos comes equipped with a custom-tuned and independently housed and powered NHP that makes starting up the mech a simple task, automating many of the more tedious tasks involved in starting systems and mounting the mech. However, the NHP goes into a sleep mode once the mech is under a pilot's or another AI's control. The pilot is strictly forbidden from granting control of the Erdos to this NHP, though no violation reports have been publicly recorded so far.</p>",
-      "deactivation": "",
+      "deactivation": "Full",
       "use": "Mission",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
       "passive_name": "Erdos Integrated NHP",
       "passive_effect": "<p>Your mech gains the AI tag; however, this NHP doesn’t count towards the number of AIs you may have installed at once. You are unable to hand over control of your mech to this NHP as a Protocol, but it is capable of cascading.</p><p>You may Boot Up or Mount the Erdos as a quick action. If any NHP in your mech is cascading, this NHP will, as a protocol, shut off your mech.</p>",
       "passive_actions": [
@@ -569,13 +467,8 @@
           "detail": "<p>Boot up, mount, or dismount the Erdos.</p>",
           "cost": 0,
           "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
           "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
+          "frequency": "Unlimited"
         },
         {
           "name": "Deactivate Mech",
@@ -583,39 +476,28 @@
           "detail": "<p>Immediately perform the Shut Down action.</p>",
           "cost": 0,
           "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
           "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": ""
+          "frequency": "Unlimited"
         }
-      ],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [],
-      "special_equipment": [],
-      "tags": []
+      ]
     },
-    "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/464204/ss_a8606be8b177492718b5025ef4d1e74d7d92769f.1920x1080.jpg?t=1468896438",
-    "y_pos": "17"
+    "image_url": "",
+    "y_pos": 7
   },
   {
-    "license_id": "EDFPOINCUSTOM",
-    "id": "EDFPOINCUSTOM",
-    "source": "EDF",
+    "license_id": "AAFPOINCUSTOM",
+    "id": "AAFPOINCUSTOM",
+    "source": "AAF",
     "license_level": 2,
     "name": "Poincare",
     "mechtype": [
-      "Support"
+      "Support",
+      "Striker"
     ],
     "description": "<div>The Poincare is a reward to pilots who pay for the Archimedes license. It features many quality of life features that make piloting it considerably easier and more fulfilling, including a Comp/Con-assisted augmented reality suite to assist in both aiming and staving off boredom during downtime. What makes the Poincare so unique compared to the original is the enhanced joint reinforcements allowing for more speed at the cost of power being drained from its sensor array.</div>",
     "mounts": [
       "Main",
-      "Main/Aux"
+      "Flex"
     ],
     "stats": {
       "size": 0.5,
@@ -636,18 +518,16 @@
     "traits": [
       {
         "name": "Clingrod Magnetizers",
-        "use": "",
         "description": "<div>The Poincare treats all solid surfaces, including ceilings, as flat ground for the purposes of movement; it can move across them normally instead of climbing. While doing so, it becomes Immobilized while it is knocked Prone by other characters, though it can still Stand Up to clear the condition.</div>"
       },
       {
         "name": "Archon Stasis-Amp",
-        "use": "",
         "description": "<div>As a protocol, the Poincare may divert power from its legs to its communications array, allowing the extra power to be used on one tech action.</div>",
         "actions": [
           {
             "name": "Activate Archon Stasis-Amp",
             "activation": "Protocol",
-            "detail": "<div>You may become Prone and choose one:</div><ul><li><div>Bolster as a free action. Your target may clear 2 heat or gain 2 overshield.</div></li><li><div>Lock On as a free action. That character gains 2 heat when the lockon is consumed.</div></li><li><div>Automatically search or scan a target as a free action.</div></li></ul>",
+            "detail": "<div>You may become Prone and choose one:</div><ul><li><div>Bolster as a free action. Your target may clear 2 heat or gain 2 overshield.</div></li><li><div>Lock On as a free action. That character gains 2 heat when the Lock-On is consumed.</div></li><li><div>Automatically search or scan a target as a free action.</div></li></ul>",
             "pilot": false,
             "tech_attack": false
           }
@@ -659,32 +539,31 @@
       "active_name": "Radio Flash",
       "active_effect": "<p>You may perform the Scan quick action as a free action against any number of hostile characters within Sensors. Each character scanned this way may have an invade option applied to them by another friendly character. This does not count as a successful invade and does not apply heat on its own as if it was a successful invade.</p>",
       "activation": "Full",
-      "description": "<p>The Gatling Gun, labelled the FK4847 Gatling Gun, is a compact rotating-barrel rapid-fire \"siege rifle\" mounted to the bottom of all Depth Crawlers. While slow and unwieldy, its reinforcements allow it to be fired for a considerable length of time and with a considerable amount of power behind each round before the gun cooks the mech. Its overwhelming heat make it unfavorable for anything more complicated than a Poincare, however. Even Tokugawas would have trouble putting the FK4847 Gatling Gun to good use, so the EDF hasn't opted to sell it or an alternative version of it standalone.</p>",
-      "deactivation": "",
-      "use": "Scene",
+      "description": "<p>The Gatling Gun, labelled the FK4847 Gatling Gun, is a compact rotating-barrel rapid-fire \"siege rifle\" mounted to the bottom of all Depth Crawlers. While slow and unwieldy, its reinforcements allow it to be fired for a considerable length of time and with a considerable amount of power behind each round before the gun cooks the mech. Its overwhelming heat make it unfavorable for anything more complicated than a Poincare, however. Even Tokugawas would have trouble putting the FK4847 Gatling Gun to good use, so the AAF hasn't opted to sell it or an alternative version of it standalone.</p>",
+      "deactivation": "None",
       "integrated": [
-        "EDFDEPTHGATLING"
+        "AAFDEPTHGATLING"
       ],
       "special_equipment": [],
       "tags": []
     },
-    "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/473445/ss_8f7c02d587fcfe86ba92c508e291508fe4614ef4.1920x1080.jpg?t=1468896542",
+    "image_url": "",
     "y_pos": 21
   },
   {
-    "id": "EDFPOIN",
-    "license_id": "EDFPOIN",
-    "source": "EDF",
+    "id": "AAFPOIN",
+    "license_id": "AAFPOIN",
+    "source": "AAF",
     "license_level": 0,
     "name": "Archimedes",
     "mechtype": [
-      "Support"
+      "Support",
+      "Striker"
     ],
-    "variant": "",
-    "description": "<div>The Archimedes is the EDF's premier donationware combat assistant platform, available to any pilot with a valid license. While not as popular as the Everest, Sherman, or even Erdos, its popularity as a free and outside-the-norm mech is undeniable according to many pilots early in their career. Built from the ground-up for cave missions, the Archimedes is a valuable addition to any fire team needing fire support, reconnaissance, spotting, or any number of other supportive maneuvers as it crawls across walls and ceilings.</div>",
+    "description": "<div>The Archimedes is the AAF's premier donationware combat assistant platform, available to any pilot with a valid license. While not as popular as the Everest, Sherman, or even Erdos, its popularity as a free and outside-the-norm mech is undeniable according to many pilots early in their career. Built from the ground-up for cave missions, the Archimedes is a valuable addition to any fire team needing fire support, reconnaissance, spotting, or any number of other supportive maneuvers as it crawls across walls and ceilings.</div>",
     "mounts": [
       "Main",
-      "Main/Aux"
+      "Flex"
     ],
     "stats": {
       "size": 0.5,
@@ -705,12 +584,10 @@
     "traits": [
       {
         "name": "Clingrod Magnetizers",
-        "use": "",
         "description": "<div>The Archimedes treats all solid surfaces, including ceilings, as flat ground for the purposes of movement; it can move across them normally instead of climbing. While doing so, it becomes Immobilized while it is knocked Prone by other characters, though it can still Stand Up to clear the condition.</div>"
       },
       {
         "name": "Archon Stasis-Amp",
-        "use": "",
         "description": "<div>As a protocol, the Archimedes may divert power from its legs to its communications array, allowing the extra power to be used on one tech action.</div>",
         "actions": [
           {
@@ -720,7 +597,7 @@
             "pilot": false,
             "tech_attack": false
           }
-	]
+	      ]
       }
     ],
     "core_system": {
@@ -728,29 +605,29 @@
       "active_name": "Radio Flash",
       "active_effect": "<p>You may perform the Scan quick action as a free action against any number of hostile characters within Sensors. Each character scanned this way may have an invade option applied to them by another friendly character. This does not count as a successful invade and does not apply heat on its own as if it was a successful invade.</p>",
       "activation": "Full",
-      "description": "<p>The Gatling Gun, labelled the FK4847 Gatling Gun, is a compact rotating-barrel rapid-fire \"siege rifle\" mounted to the bottom of all Depth Crawlers. While slow and unwieldy, its reinforcements allow it to be fired for a considerable length of time and with a considerable amount of power behind each round before the gun cooks the mech. Its overwhelming heat make it unfavorable for anything more complicated than a Poincare, however. Even Tokugawas would have trouble putting the FK4847 Gatling Gun to good use, so the EDF hasn't opted to sell it or an alternative version of it standalone.</p>",
-      "deactivation": "",
-      "use": "Scene",
+      "description": "<p>The Gatling Gun, labelled the FK4847 Gatling Gun, is a compact rotating-barrel rapid-fire \"siege rifle\" mounted to the bottom of all Depth Crawlers. While slow and unwieldy, its reinforcements allow it to be fired for a considerable length of time and with a considerable amount of power behind each round before the gun cooks the mech. Its overwhelming heat make it unfavorable for anything more complicated than a Poincare, however. Even Tokugawas would have trouble putting the FK4847 Gatling Gun to good use, so the AAF hasn't opted to sell it or an alternative version of it standalone.</p>",
+      "deactivation": "None",
       "active_actions": [],
       "integrated": [
-        "EDFDEPTHGATLING"
+        "AAFDEPTHGATLING"
       ],
       "special_equipment": [],
       "tags": []
     },
-    "image_url": "https://fanboydestroy.files.wordpress.com/2015/01/edf-4-1-depth-crawler.jpg",
+    "image_url": "",
     "y_pos": 20
   },
   {
-    "id": "EDFHILBERT",
-    "source": "EDF",
+    "id": "AAFHILBERT",
+    "source": "AAF",
     "license_level": 2,
     "name": "Hilbert",
     "mechtype": [
       "Controller"
     ],
     "variant": "Pythagoras",
-    "description": "<div>The Hilbert may be taken at rank II of the Pythagoras license instead of the base FRAME.</div><div></div><div>The Hilbert is the testbed project that flew so the Pythagoras could find its stride. It was an unfathomably complex beast before it was run through the Storm One Structural Conversion program back during UNC’s time in Seccomm. Time and time again, the SOSC was iterated on and the Hilbert was run through it before the UNC settled on a program that could handle simplifying the Pythagoras. When the Hilbert and the Pythagoras finally finished development, it was a momentous occasion. Ground forces and air forces united to perform this miraculous task, and the payoff was a mech now known for its dangerous run-and-gun strategies that made it a favorite among Seccomm strategists and think tanks who quickly found counter-insurgent uses for a platform that could not only deploy everything from bombs to subalterns, but also Bigfoots and other smaller war machines deep into the backlines of hostile forces.</div>",
+    "license_id": "AAFPYTHAG",
+    "description": "<div>The Hilbert may be taken at rank II of the Pythagoras license instead of the base FRAME.</div><div></div><div>The Hilbert is the testbed project that flew so the Pythagoras could find its stride. It was an unfathomably complex beast before it was run through the Plyboard Structural Conversion program. Time and time again, the PSC was iterated on and the Hilbert was run through it before the AAF settled on a program that could handle simplifying the Pythagoras. When the Hilbert and the Pythagoras finally finished development, it was a momentous occasion. Ground forces and air forces united to perform this miraculous task, and the payoff was a mech now known for its dangerous run-and-gun strategies that made it a favorite among Atacaman strategists and think tanks who quickly found counter-insurgent uses for a platform that could not only deploy everything from bombs to subalterns, but also Pythagoras and other smaller war machines deep into the backlines of hostile forces.</div>",
     "mounts": [
       "Aux/Aux",
       "Flex"
@@ -773,7 +650,7 @@
     },
     "traits": [
       {
-        "name": "EDF Integrated Scramjet System",
+        "name": "AAF Integrated Scramjet System",
         "description": "<div>The Hilbert may fly when it moves or boosts. If it does so, it gains 1 Heat at the end of the turn.</div>"
       },
       {
@@ -795,9 +672,9 @@
       "active_effect": "<p>Until the end of the scene, 1/round when you use a limited charge, you may move a number of spaces up to half your speed.</p>",
       "activation": "Protocol",
       "description": "<p><em>One thing the Hilbert was built for was mid-combat asset management. Its engines are only rated for so much, but it is capable of surprising feats when pushed accordingly.</em></p>",
-      "use": "Scene"
+      "use": "Encounter"
 	},
-    "image_url": "https://preview.redd.it/a0qeu74e0xl91.png?width=640&crop=smart&auto=webp&s=b2f86f4d7815f4aac416cfe1f588924ea1737d33",
+    "image_url": "",
     "y_pos": 0
   },
   {
@@ -834,12 +711,18 @@
     "traits": [
       {
         "name": "Mass-Produced Parts",
-        "use": "",
-        "description": "<div>While resting, the Shakyas can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs. Additionally, if printers are not available, parts for the Shakyas are easier to find.</div>"
+        "description": "<div>While resting, the Shakyas can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs. Additionally, if printers are not available, parts for the Shakyas are easier to find.</div>",
+        "bonuses": [
+          {
+            "id": "cheap_struct",
+            "val": "true",
+            "overwrite": false,
+            "replace": false
+          }
+        ]
       },
       {
         "name": "Brazen Steel",
-        "use": "",
         "description": "<div>If an attack would cause the Shakyas to take structure damage, it immediately gains resistance to it. This can happen multiple times in a row if the reduced damage prevents loss of structure. Attacks which directly deal structure damage, such as Sniper's Mark, are unaffected by this and deal damage as normal.</div>"
       }
     ],
@@ -849,9 +732,9 @@
       "active_effect": "<p>You unlock the gimbal mounts on your weapons, allowing them to rotate independently of each-other. For the rest of the scene:</p><ul><li><p>1/round, you may take an additional Overwatch reaction.</p></li><li><p>You gain +1 Accuracy on attacks made as reactions.</p></li><li><p>If a weapon does not already have Reliable, it gains Reliable 1.</p></li></ul>",
       "activation": "Protocol",
       "description": "<p>Due to the Shakyas's simple construction, field modifications and tweaks to the mech's systems are commonplace among savvy pilots.</p>",
-      "use": "Scene"
+      "use": "Encounter"
     },
-    "image_url": "https://media.discordapp.net/attachments/873046484017360946/1112057477165490206/Shakyas.PNG?width=374&height=432",
+    "image_url": "",
     "y_pos": 0
   },
   {
@@ -887,17 +770,14 @@
     "traits": [
       {
         "name": "Slow",
-        "use": "",
         "description": "<div>The Koliyas receives +1 difficulty on Agility checks and saves.</div>"
       },
       {
         "name": "Guardian",
-        "use": "",
         "description": "<div>Adjacent allied characters can use the Koliyas for hard cover.</div>"
       },
       {
         "name": "Sluggish Actuators",
-        "use": "",
         "description": "<div>The Koliyas receives +1 difficulty on all attacks made as reactions (e.g. Overwatch).</div>"
       }
     ],
@@ -907,11 +787,11 @@
       "active_effect": "<p>You hand over control of your mech's weapons to your COMP/CON unit for the rest of the scene, being responsible solely for movement. It acts immediately after you, using whatever actions are remaining from your turn to attack the nearest enemy within line of sight. While the controls are transferred, you gain the following benefits:</p><ul><li><p>You roll a critical on a 19 or 20.</p></li><li><p>If you do not move, voluntarily or involuntarily, you roll to hit with accuracy.</p></li><li><p>Your weapons gain +5 Range.</p></li><li><p>You may reload loading weapons as a free action.</p></li></ul><p>At the end of the scene, weapons control is returned to you and the COMP/CON unit goes into a repair state, its electronics damaged from the immense amount of processing it had to do. While in its repair state, you do not benefit from the COMP/CON unit's passive until your next full repair.</p>",
       "activation": "Protocol",
       "description": "<p>The Koliyas comes equipped with an integrated President-Class COMP/CON unit designed to decrease pilot stress by assisting with aiming weapons. Though the frame's handbook states not to hand full weapons control over to the unit, most pilots disregard it.</p>",
-      "use": "Scene",
+      "use": "Encounter",
       "passive_name": "President-Class Integrated COMP/CON Unit",
       "passive_effect": "<p>Your mech gains the AI tag; however, this COMP/CON doesn’t count towards the number of AIs you may have installed at once.</p><p></p><p>Any turrets or other stationary automated weapons under your control will prioritize targets you attack, even if the attack misses.</p><p></p><p>You can give control of your mech to its COMP/CON as a protocol, allowing your mech to act independently on your turn with its own set of actions. Unlike other AIs, a mech controlled by a COMP/CON has no independent initiative and requires direct input. Your mech will follow basic courses of action (defend this area, attack this enemy, protect me, etc.) to the best of its ability, or will act to defend itself if its instructions are complete or it receives no further guidance. You can issue new commands at the start of your turn as long as you are within Range 50 and have the means to communicate with your mech. Comp/con units are not true NHPs and thus cannot enter cascade.</p>"
     },
-    "image_url": "https://cdn.discordapp.com/attachments/873046484017360946/1112419130696552569/image.png",
+    "image_url": "",
     "y_pos": 0
   },
   {
@@ -961,7 +841,8 @@
     "core_system": {
       "name": "Overclock Injector",
       "active_name": "Overdrive",
-      "active_effect": "<p>For the rest of the scene, you gain +1 Accuracy on all Attacks, Checks, and Saves. Additionally, 1/turn, you may take any quick action as a free action.</p>"
+      "active_effect": "<p>For the rest of the scene, you gain +1 Accuracy on all Attacks, Checks, and Saves. Additionally, 1/turn, you may take any quick action as a free action.</p>",
+      "activation": "Quick"
     },
     "image_url": "",
     "y_pos": 0
@@ -1000,17 +881,14 @@
     "traits": [
       {
         "name": "Take Cover",
-        "use": "",
         "description": "<div>While Prone, the Mallakas counts as having hard cover regardless of line of sight.</div>"
       },
       {
         "name": "Compact Actuators",
-        "use": "",
         "description": "<div>The Mallakas receives +1 difficulty on Hull checks and saves.</div>"
       },
       {
         "name": "Heroic Technology",
-        "use": "",
         "description": "<div>The Mallakas and all deployables under its control receive +1 accuracy on Engineering checks and saves.</div>"
       }
     ],
@@ -1020,7 +898,7 @@
       "active_effect": "<p>For the rest of the scene;</p><ul><li><p>Entering line of sight of hostile characters or moving from cover does not stop you from being Hidden.</p></li><li><p>The Mallakas may throw Grenades or plant Mines from any system anywhere within Sensors.</p></li><li><p>When you use a Limited weapon or system, roll a d6. On a 5 or 6, regain one limited use of that weapon or system.</p></li><li><p>When targeted for an attack or within the area of an attack the Mallakas may immediately drop prone as a reaction.</p></li></ul>",
       "activation": "Protocol",
       "description": "",
-      "use": "Scene",
+      "use": "Encounter",
       "active_actions": [
         {
           "name": "Dive Prone",
@@ -1055,9 +933,7 @@
               "range": [],
               "synergy_locations": [],
               "tech_attack": false,
-              "frequency": "Unlimited",
-              "init": "",
-              "trigger": ""
+              "frequency": "Unlimited"
             }
           ]
         },
@@ -1119,27 +995,25 @@
     "traits": [
       {
         "name": "Slow",
-        "use": "",
         "description": "<div>The Licchavis receives +1 difficulty on Agility checks and saves.</div>"
       },
       {
         "name": "Lightweight Frame",
-        "use": "",
         "description": "<div>Whenever the Licchavis fires a Heavy or Superheavy weapon, it may choose to move up to two spaces in the opposite direction of where it fired. </div>"
       }
     ],
     "core_system": {
       "name": "Judgement Satellite Array",
       "active_name": "His Divine Light",
-      "active_effect": "<p>You fire your Judgement Satellite Array, creating 3 Blast 1 areas of blinding white light at spaces you can see within Range 50. Whenever a character enters an area for the first time in a round or starts their turn there, they take 1d6 Energy damage which cannot be reduced in any way. While a character is within an area, they are shredded until they leave, and when they are targeted with an attack, the lower value of their Evasion and E-Defense is used to determine a hit. As a full action, you may relocate any number of these beams, following the same rules as deploying them.</p>",
+      "active_effect": "<p>You fire your Judgement Satellite Array, creating 3 Blast 1 areas of blinding white light that don't overlap originating at spaces you can see within Range 50. Whenever a character starts their turn in or enters an area for the first time during their turn, they take 1d6 Energy damage. As a full action, you may relocate any number of these beams, following the same rules as deploying them.</p>",
       "activation": "Full",
       "description": "<p>Licensed alongside the Licchavis frame is your very own Judgement Satellite Array. Look at how special you are!</p><p></p><p>Utilizing groups of satellites firing towards singular focal points, Judgement Arrays are capable of projecting devastating force for their energy cost. Though not the deadliest weapon in the Helldivers arsenal, they excel at illuminating enemies, making them stand right out in the sights of a Smite or Claymore.</p>",
-      "use": "Scene",
+      "use": "Encounter",
       "active_actions": [
         {
-          "name": "Relocate",
+          "name": "Relocate His Divine Light",
           "activation": "Full",
-          "detail": "<p>You relocate any number of your His Divine Light beams to a position you can see within Range 50.</p>",
+          "detail": "<p>You relocate any number of your His Divine Light beams to new positions within Line of Sight and Range 50.</p>",
           "cost": 0,
           "pilot": false,
           "tech_attack": false

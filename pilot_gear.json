@@ -1,11 +1,11 @@
 [
   {
-    "id": "EDFBLAZERGEAR",
+    "id": "AAFSTORMGEAR",
     "name": "Storm Laser Rifle",
     "type": "Weapon",
     "description": "<div>A replica of a Dark Age weapon, even this model deals damage only imaginable by those who have wielded its power firsthand. It is capable of firing for nearly half a mile before its damage drops off.</div>",
     "tags": [{"id": "tg_ordnance"},{"id": "tg_reliable","val": 2},{"id": "tg_exotic"},{"id": "tg_pilot_weapon"}],
-    "range": [{"type": "range","val": 15}],
+    "range": [{"type": "Range","val": 15}],
     "damage": [{"type": "Energy","val": 5}],
     "effect": "<div>This pilot gear may be picked beyond the standard 2 Exotic limit if you are also using the Storm Laser Array Exotic mech weapon and this Exotic.</div>"
   }
