@@ -584,7 +584,7 @@
     "effect": "<div>If you have not performed your standard move or any other action other than protocols when you Bolster or Lock On, you may do the action again as a free action.</div>",
     "type": "System",
     "sp": 2,
-    "description": "<div>While the Ranger support squad called Omega Team has been disbanded since the fall of SecComm, their legacy has been immortalized with the Omega Tech Support Package; a collection of software and hardware upgrades set aside and bundled for dedicated AAF licensees and contractors as a reward for their continued contribution.</div>",
+    "description": "<div>While the Ranger support squad called Omega Team has been disbanded long ago, their legacy has been immortalized with the Omega Tech Support Package; a collection of software and hardware upgrades set aside and bundled for dedicated AAF licensees and contractors as a reward for their continued contribution.</div>",
     "tags": [{"id": "tg_unique"}]
   },
   {
@@ -594,7 +594,7 @@
     "license": "Poincare Custom",
     "license_id": "AAFPOINCUSTOM",
     "license_level": 3,
-    "effect": "<div>You don't need Line of Sight to Scan targets.</div>",
+    "effect": "<div>You don't need Line of Sight to Scan or apply Lock On to targets.</div>",
     "type": "System",
     "sp": 1,
     "description": "<div>While the Minimap Module is a standard piece of equipment for AAF personnel, it's a premium piece of equipment for those outside of the rank and file of the AAF. Lightweight, low impact, a clean addition to any mech.</div>",
@@ -607,7 +607,7 @@
     "license": "Euler",
     "license_id": "AAFEULER",
     "license_level": 3,
-    "effect": "<div>If you are targeted by a tech action, the character targeting must pass a Hull save. If they fail, the action is canceled. While you are hidden, hostile traits and systems cannot affect you, hostiles cannot see you without line of sight, and this cannot be prevented by any means. If you take structure damage, this system is immediately destroyed before any roll is made.</div>",
+    "effect": "<div>If you are targeted by a tech action, the character targeting must pass a Hull save. If they fail, they must choose a different target for the action or lose the action. While you are hidden, hostile traits and systems cannot affect you, hostiles cannot see you without line of sight, and this cannot be prevented by any means. If you take structure damage, this system is immediately destroyed before any roll is made.</div>",
     "type": "System",
     "sp": 3,
     "description": "<div>The coating of mechs in gold was a fringe idea when it was conceived, even in the think-tanks of the AAF, but its benefits outweigh its fragility for many pilots who now pay a premium to the AAF for the rights to use their gold plating patterns for mechs across space and time.</div>",
@@ -620,7 +620,7 @@
     "license": "",
     "license_id": "",
     "license_level": 0,
-    "effect": "<div>Your mech gains resistance to non-Heat damage that originates from yourself, your weapons, and your systems. This cannot be prevented in any way whatsoever, and no rule supersedes this.</div>",
+    "effect": "<div>Your mech gains resistance to damage that originates from yourself, your weapons, and your systems. This cannot be prevented in any way whatsoever, and no rule supersedes this.</div>",
     "type": "System",
     "sp": 0,
     "description": "<div>Deep in testing in the AAF Exotic Materials Facility, the Bombardment Musculature System uses the Storm One Structural Conversion program to simplify the muscles and hydraulics of mechs to make them resistant to explosions and other forms of limited damage. Active testing of this system is distributed under NDA to a limited pool of participants.</div>",
@@ -642,11 +642,9 @@
       {
         "name": "Deploy Static Field Conductors",
         "activation": "Quick",
-        "detail": "<div>When fired as a quick action, these conductors influence a Blast 2 area, making it difficult terrain. Immunity to difficult terrain granted by other systems, like the Nelson's Bulwark Mods, does not work against difficult terrain created by the Static Field Conductors</div>",
+        "detail": "<div>When fired as a quick action, these conductors influence a Blast 2 area, making it difficult terrain. Immunity to difficult terrain granted by other systems, like the Nelson's Bulwark Mods, does not work against difficult terrain created by the Static Field Conductors.</div>",
         "cost": 1,
-        "pilot": false,
-        "range": [{"type": "Range","val": 10},{"type": "Blast","val": 2}],
-        "tech_attack": false
+        "range": [{"type": "Range","val": 10},{"type": "Blast","val": 2}]
       }
     ]
   },
@@ -659,7 +657,7 @@
     "license_level": 3,
     "effect": "<div>1/scene, as a quick action, you may launch a stratagem beacon up to Range 5 to call in an A/RX-34 Railcannon Turret. The turret is delivered at the start of your next turn, and can fire immediately afterwards. Gain the Railcannon Shot Reaction, which can be taken once per round for each A/RX-34 Railcannon Turret deployed when an allied character makes an attack against a character against a target within Line of Sight and Range 15.</div>",
     "type": "Drone",
-    "sp": 5,
+    "sp": 3,
     "description": "",
     "tags": [{"id": "tg_limited","val": 1}],
     "deployables": [
@@ -675,7 +673,7 @@
           {
             "name": "Railcannon Shot",
             "activation": "Reaction",
-            "detail": "<div>The A/RX-34 Railcannon deals 3 AP kinetic damage to all targets in Line 15, aiming at the nearest hostile target in line of sight. The attack continues to the full length of the line or until it hits an object or piece of terrain.</div>",
+            "detail": "<div>The A/RX-34 Railcannon deals 3 AP kinetic damage to all targets in Line 15, aiming at target of the triggering attack. This effect continues to the full length of the line or until it hits an object or piece of terrain.</div>",
             "pilot": false,
             "tech_attack": false,
             "frequency": "1/round",
@@ -709,14 +707,14 @@
     "type": "System",
     "sp": 3,
     "description": "",
-    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_limited","val": 2},{"id": "tg_unique"}],
     "actions": [
       {
         "name": "Launch Missile Barrage",
         "activation": "Quick",
         "detail": "<div>Fire a stratagem beacon within Range 5. From where it lands, choose 3 Blast 1 areas within Range 3 of the beacon, which cannot overlap. At the start of your next turn, any characters within the areas you chose must succeed on an Agility save or take 1d6 Explosive damage, taking half as much on a success. All characters can see where the missiles will land.</div>",
         "range": [{"type": "Range","val": 8},{"type": "Blast","val": 1}],
-		"damage": [{"type": "Explosive","val": "1d6"}],
+		    "damage": [{"type": "Explosive","val": "1d6"}],
         "pilot": false,
         "tech_attack": false
       }
@@ -732,19 +730,16 @@
     "type": "System",
     "sp": 2,
     "description": "",
-    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"},{"id": "tg_quick_action"}],
+    "tags": [{"id": "tg_limited","val": 2},{"id": "tg_unique"},{"id": "tg_quick_action"}],
     "actions": [
       {
         "name": "Call Strafing Run",
         "activation": "Quick",
         "detail": "<div>Choose a Line 9 area centered at any point of your choosing within Range 8, in any orientation. Characters in this area must succeed on an Agility save or take 1d6 Kinetic damage, taking half as much on a success.</div>",
         "damage": [{"type": "Kinetic","val": "1d6"}],
-		"range": [{"type": "Range","val": 8},{"type": "Line","val": 9}],
+		    "range": [{"type": "Range","val": 8},{"type": "Line","val": 9}],
         "pilot": false,
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
+        "tech_attack": false
       }
     ]
   },
@@ -790,7 +785,7 @@
             "pilot": false,
             "tech_attack": false,
             "frequency": "1/round",
-            "trigger": "<div>An allied character within Range 12 of a turret drone makes a successful attack.</div>"
+            "trigger": "<div>An allied character within Range 10 of a turret drone makes a successful attack.</div>"
           }
         ]
       }
@@ -803,11 +798,11 @@
     "license": "Mallakas",
     "license_id": "HD_MALLAKAS",
     "license_level": 1,
-    "effect": "<div>When the NUX-223 Hellbomb would be deployed, it is instead deployed at the start of the following turn, immediately forcing any objects, cover, or characters in the deployment area to move until they are no longer in the deployment area and dealing 2d6 kinetic damage. If they cannot be moved in any way, they are annihilated instead and the NUX-223 Hellbomb is deployed as usual.</div>",
+    "effect": "<div>When the NUX-223 Hellbomb would be deployed, it is instead deployed at the start of the following turn, immediately forcing any objects, cover, or characters in the deployment area to move until they are no longer in the deployment area and forcing them to succeed on an Agility Save or dealing 2d6 kinetic damage. If they cannot be moved in any way, they are annihilated instead and the NUX-223 Hellbomb is deployed as usual.</div>",
     "type": "System",
     "sp": 4,
     "description": "",
-	"tags": [{"id":"tg_limited","val":1}],
+	  "tags": [{"id":"tg_limited","val":1},{"id": "tg_unique"}],
     "deployables": [
       {
         "name": "NUX-223 Hellbomb",
@@ -821,13 +816,9 @@
           {
             "name": "Activate Hellbomb",
             "activation": "Full",
-            "detail": "<div>Arms an adjacent NUX-223 Hellbomb, initiating an irreversible meltdown within it where it will explode at the end of the round following the round it was armed as though it suffered a reactor meltdown. The explosion annihilates the deployable, immediately killing any characters with the biological tag and dealing 4d6 AP Energy damage to characters and objects which are not prone within blast 2. If they are prone, they only receive 2d6 Energy damage. All characters within the area may drop prone as a reaction at any time or as a free action on their turn.</div>",
+            "detail": "<div>Arm an adjacent NUX-223 Hellbomb, initiating an irreversible meltdown within it where it will explode at the end of the round following the round it was armed as though it suffered a reactor meltdown. The explosion annihilates the deployable, immediately killing any characters with the biological tag, dealing 4d6 AP Energy damage to characters and objects which are not prone, and completely destroying any size 3 or smaller terrain within blast 2. If they are prone, they only receive 2d6 Energy damage. All characters within the area may drop prone as a reaction at any time or as a free action on their turn.</div>",
             "pilot": false,
-            "synergy_locations": [],
-            "tech_attack": false,
-            "frequency": "Unlimited",
-            "init": "",
-            "trigger": ""
+            "tech_attack": false
           }
         ]
       }
@@ -848,10 +839,10 @@
       {
         "name": "Throw Javelin Charge",
         "activation": "Quick",
-        "detail": "<div>Throw a Javelin within Range 10. All characters within a Blast 1 area must pass an Agility save or take 1d6 Explosive damage. On a success, they take half damage.</div>",
+        "detail": "<div>Throw a strategem beacon within Range 5. All characters within a Blast 1 area must pass an Hull save or take 1d6 Explosive damage. On a success, they are impaired instead and cease benefitting from the effects of Invisible until the start of their next turn.</div>",
         "damage": [{"type":"Explosive","val":"1d6"}],
-		"range": [{"type":"Range","val":10},{"type":"Blast","val":1}],
-		"pilot": false,
+		    "range": [{"type":"Range","val":5},{"type":"Blast","val":1}],
+		    "pilot": false,
         "tech_attack": false
       }
     ]
@@ -863,7 +854,6 @@
     "license": "Koliyas",
     "license_id": "HD_KOLIYAS",
     "license_level": 2,
-    "effect": "<div></div>",
     "type": "System",
     "sp": 2,
     "description": "",
@@ -872,7 +862,7 @@
       {
         "name": "Request Airdropped Stun Mines",
         "activation": "Quick",
-        "detail": "<div>When fired as a quick action, these airdropped mines cover a Blast 2 area within Range 15. When a character starts their turn within this area or enters it for the first time in a turn, they must succeed on an Agility save or be Impaired and Slowed until the end of their next turn.</div>",
+        "detail": "<div>As a Quick Action, throw a strategem beacon that deploys airdropped mines that covers a Blast 2 area within Range 8. When a character starts their turn within this area or enters it for the first time in a turn, they must succeed on an Agility save or be Impaired and Slowed until the end of their next turn.</div>",
         "pilot": false,
         "tech_attack": false
       }

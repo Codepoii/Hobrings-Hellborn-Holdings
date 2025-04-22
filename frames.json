@@ -5,17 +5,9 @@
     "source": "AAF",
     "license_level": 2,
     "name": "Euler",
-    "mechtype": [
-      "Striker",
-      "Artillery"
-    ],
+    "mechtype": ["Striker","Artillery"],
     "description": "<div>The Euler features mobility-improving boosters to counteract recoil and, in bursts, hover and fly to reach new positions many mechs of its caliber can't reach. It has a fairly simple and straight-forward approach that makes the Euler a popular choice for AAF operatives and pilots, with its \"mobile firepower\" policy allowing it to field firepower on a rapid and maneuverable chassis. While Eulers are the most common AAF frame, most of them are in direct service to the AAF or contracted out to Far-Field teams so seeing them is a privilege typically only afforded to AAF employees or their enemies.</div>",
-    "mounts": [
-      "Main",
-      "Main",
-      "Aux",
-      "Heavy"
-    ],
+    "mounts": ["Main","Main","Aux","Heavy"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -64,15 +56,9 @@
     "source": "AAF",
     "license_level": 2,
     "name": "Pythagoras",
-    "mechtype": [
-      "Defender",
-      "Controller"
-    ],
+    "mechtype": ["Defender","Controller"],
     "description": "<div>The dark horse of the AAF's mech fleet, the Pythagoras is the product of a rogue development team attempting to develop an easily stored model of mech capable of being tightly packed in space ships to spearhead offenses into hostile space where printers would be scarce and backups would be necessary. What was produced from this inter-corporate program was an armored beast of a mech as space was wasted shaping the mech into its iconic cubic shape, this wasted space leading to a level of armor and joint reinforcement not found on most other mechs.</div>",
-    "mounts": [
-      "Flex",
-      "Flex"
-    ],
+    "mounts": ["Flex","Flex"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -154,10 +140,7 @@
       "Controller"
     ],
     "description": "<div>The Thales is the penultimate showcase of the AAF's elite's battle strategy. Effective, accurate, and capable firepower. Often described as \"a walking cockpit with guns,\" the Thales is a simpler side of the AAF's defensive capabilities. Simple, overwhelming firepower. The high platform afforded to it by its heavy, massive legs allows it to see further than many other mechs, and its advanced Multi-Pit system allows for a full fireteam to be posted in one of these mechs, each man controlling a single weapon independently while the pilot focuses on controlling the mech and keeping it stable for the rest of the team.</div>",
-    "mounts": [
-      "Flex",
-      "Heavy"
-    ],
+    "mounts": ["Flex","Heavy"],
     "stats": {
       "size": 3,
       "structure": 4,
@@ -223,10 +206,7 @@
       "Defender"
     ],
     "description": "<div>The Heron is a massive, towering frame designed and built to withstand combat against other massive or powerful mechs while still being able to retaliate against lighter mechs. However, its extreme size also makes it unwieldy and easy to topple. Instead of being armed with an unfathomable array of weaponry or communications access to request firepower only handled by ships, it is armed with its notably huge arms that allow it to do catastrophic damage to mechs, vehicles, and buildings alike, even capable of damaging smaller ships with its sheer kinetic power.</div>",
-    "mounts": [
-      "Flex",
-      "Flex"
-    ],
+    "mounts": ["Flex","Flex"],
     "stats": {
       "size": 4,
       "structure": 3,
@@ -317,14 +297,9 @@
     "source": "AAF",
     "license_level": 2,
     "name": "Gauss",
-    "mechtype": [
-      "Striker"
-    ],
+    "mechtype": ["Striker"],
     "description": "<div>The Gauss pattern frame is the AAF's token small frame, and arguably the AAF's most efficient frame in general. Its lack of size is made up for in sheer speed and durability, and its wide range of equipment allows the Gauss to take on roles often unfriendly to other small frames such as the Caliban or the Atlas.</div>",
-    "mounts": [
-      "Main",
-      "Heavy"
-    ],
+    "mounts": ["Main","Heavy"],
     "stats": {
       "size": 0.5,
       "structure": 4,
@@ -407,15 +382,9 @@
     "source": "AAF",
     "license_level": 2,
     "name": "Erdos",
-    "mechtype": [
-      "Balanced"
-    ],
+    "mechtype": ["Balanced"],
     "description": "<div>The Erdos is a large bipedal powered armor suit, one of the simpler models produced for the defense of Atacama and generally far less offensively capable than their Euler counterparts. Where they fail in maneuverability and firepower, however, they excel in sustained presence as pilots do all sorts of things to keep their hardy Erdos in the fight no matter how long it goes on, how hard it gets, or how far it gets away from them.</div>",
-    "mounts": [
-      "Aux/Aux",
-      "Flex",
-      "Heavy"
-    ],
+    "mounts": ["Aux/Aux","Flex","Heavy"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -490,15 +459,9 @@
     "source": "AAF",
     "license_level": 2,
     "name": "Poincare",
-    "mechtype": [
-      "Support",
-      "Striker"
-    ],
+    "mechtype": ["Support","Striker"],
     "description": "<div>The Poincare is a reward to pilots who pay for the Archimedes license. It features many quality of life features that make piloting it considerably easier and more fulfilling, including a Comp/Con-assisted augmented reality suite to assist in both aiming and staving off boredom during downtime. What makes the Poincare so unique compared to the original is the enhanced joint reinforcements allowing for more speed at the cost of power being drained from its sensor array.</div>",
-    "mounts": [
-      "Main",
-      "Flex"
-    ],
+    "mounts": ["Main","Flex"],
     "stats": {
       "size": 0.5,
       "structure": 4,
@@ -541,9 +504,7 @@
       "activation": "Full",
       "description": "<p>The Gatling Gun, labelled the FK4847 Gatling Gun, is a compact rotating-barrel rapid-fire \"siege rifle\" mounted to the bottom of all Depth Crawlers. While slow and unwieldy, its reinforcements allow it to be fired for a considerable length of time and with a considerable amount of power behind each round before the gun cooks the mech. Its overwhelming heat make it unfavorable for anything more complicated than a Poincare, however. Even Tokugawas would have trouble putting the FK4847 Gatling Gun to good use, so the AAF hasn't opted to sell it or an alternative version of it standalone.</p>",
       "deactivation": "None",
-      "integrated": [
-        "AAFDEPTHGATLING"
-      ],
+      "integrated": ["AAFDEPTHGATLING"],
       "special_equipment": [],
       "tags": []
     },
@@ -556,15 +517,9 @@
     "source": "AAF",
     "license_level": 0,
     "name": "Archimedes",
-    "mechtype": [
-      "Support",
-      "Striker"
-    ],
+    "mechtype": ["Support","Striker"],
     "description": "<div>The Archimedes is the AAF's premier donationware combat assistant platform, available to any pilot with a valid license. While not as popular as the Everest, Sherman, or even Erdos, its popularity as a free and outside-the-norm mech is undeniable according to many pilots early in their career. Built from the ground-up for cave missions, the Archimedes is a valuable addition to any fire team needing fire support, reconnaissance, spotting, or any number of other supportive maneuvers as it crawls across walls and ceilings.</div>",
-    "mounts": [
-      "Main",
-      "Flex"
-    ],
+    "mounts": ["Main","Flex"],
     "stats": {
       "size": 0.5,
       "structure": 4,
@@ -608,9 +563,7 @@
       "description": "<p>The Gatling Gun, labelled the FK4847 Gatling Gun, is a compact rotating-barrel rapid-fire \"siege rifle\" mounted to the bottom of all Depth Crawlers. While slow and unwieldy, its reinforcements allow it to be fired for a considerable length of time and with a considerable amount of power behind each round before the gun cooks the mech. Its overwhelming heat make it unfavorable for anything more complicated than a Poincare, however. Even Tokugawas would have trouble putting the FK4847 Gatling Gun to good use, so the AAF hasn't opted to sell it or an alternative version of it standalone.</p>",
       "deactivation": "None",
       "active_actions": [],
-      "integrated": [
-        "AAFDEPTHGATLING"
-      ],
+      "integrated": ["AAFDEPTHGATLING"],
       "special_equipment": [],
       "tags": []
     },
@@ -622,16 +575,11 @@
     "source": "AAF",
     "license_level": 2,
     "name": "Hilbert",
-    "mechtype": [
-      "Controller"
-    ],
+    "mechtype": ["Controller"],
     "variant": "Pythagoras",
     "license_id": "AAFPYTHAG",
     "description": "<div>The Hilbert may be taken at rank II of the Pythagoras license instead of the base FRAME.</div><div></div><div>The Hilbert is the testbed project that flew so the Pythagoras could find its stride. It was an unfathomably complex beast before it was run through the Plyboard Structural Conversion program. Time and time again, the PSC was iterated on and the Hilbert was run through it before the AAF settled on a program that could handle simplifying the Pythagoras. When the Hilbert and the Pythagoras finally finished development, it was a momentous occasion. Ground forces and air forces united to perform this miraculous task, and the payoff was a mech now known for its dangerous run-and-gun strategies that made it a favorite among Atacaman strategists and think tanks who quickly found counter-insurgent uses for a platform that could not only deploy everything from bombs to subalterns, but also Pythagoras and other smaller war machines deep into the backlines of hostile forces.</div>",
-    "mounts": [
-      "Aux/Aux",
-      "Flex"
-    ],
+    "mounts": ["Aux/Aux","Flex"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -683,15 +631,9 @@
     "source": "HELLDIVERS™",
     "license_level": 2,
     "name": "Shakyas",
-    "mechtype": [
-      "Striker",
-      "Controller"
-    ],
+    "mechtype": ["Striker","Controller"],
     "description": "<div><em>\"The 'Shakyas' Exosuit is a continued and specialized development of the EXO-44 ‘Byblos’ Exosuit. Armed with two twin 20mm autocannons, it is devastating to low and medium armored targets. Its only drawback is the distinct lack of Anti-Tank capability.\"<br>- Armory Description</em></div><div></div><div>Constantly being improved upon over the years, the EXO-48 Shakyas Exosuit is an originally archaic design that has stood the test of time. Although its stock loadout lacks the anti-armour capabilities of its predecessor, the frame is easily modifiable and its systems are beneficial to most common weapons. Like the Byblos, the Shakyas often finds itself in places where printers are scarce, allowing it to make the most of its easily replaceable parts.</div>",
-    "mounts": [
-      "Main",
-      "Main"
-    ],
+    "mounts": ["Main","Main"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -743,14 +685,9 @@
     "source": "HELLDIVERS™",
     "license_level": 2,
     "name": "Koliyas",
-    "mechtype": [
-      "Defender"
-    ],
+    "mechtype": ["Defender"],
     "description": "<div><em>\"The EXO-51 was developed as a specific counter to heavier enemy targets, incorporating a 90mm cannon into the design. It is also armed with a flamer to deal with smaller threats. Some compromises were made to accommodate the large cannon, most notably it has severely limited ammunition and lacks gyro stabilization for its main gun.\"<br>- Armory Description</em></div><div></div><div>Developed to fight heavier threats, the EXO-51 Koliyas is simple, reliable, but clunky frame capable of carrying heavier weaponry than its predecessors. Typically deployed with the FLAM-270 Arc Melter and the AC-150 Liberty, its stock loadout is capable of dealing with a wide variety of opponents, an ability that, along with its bulk, has made it a popular choice across the galaxy.</div>",
-    "mounts": [
-      "Flex",
-      "Heavy"
-    ],
+    "mounts": ["Flex","Heavy"],
     "stats": {
       "size": 2,
       "structure": 4,
@@ -800,14 +737,9 @@
     "source": "HELLDIVERS™",
     "license_level": 2,
     "name": "Byblos",
-    "mechtype": [
-      "Striker"
-    ],
+    "mechtype": ["Striker"],
     "description": "<div><em>\"The pinnacle of Helldiver weaponry; the EXO-44 is a manned Byblos armed with the MG-11 minigun and eight anti-infantry homing missiles.\"<br>- Armory Description</em></div><div></div><div>Though largely obsolete by modern standards, the Byblos is still favoured by some pilots for its modifiability and reliability, with many of them often being a mismatch of replacement parts from various other Bybloss. Many consider these pilots to be mad or downright stupid, but they've proven to be just as effective as pilots of more modern mechs, meaning they haven't been forced to a newer frame just yet.</div>",
-    "mounts": [
-      "Main",
-      "Aux/Aux"
-    ],
+    "mounts": ["Main","Aux/Aux"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -853,15 +785,9 @@
     "source": "HELLDIVERS™",
     "license_level": 2,
     "name": "Mallakas",
-    "mechtype": [
-      "Support",
-      "Striker"
-    ],
+    "mechtype": ["Support","Striker"],
     "description": "",
-    "mounts": [
-      "Aux/Aux",
-      "Flex"
-    ],
+    "mounts": ["Aux/Aux","Flex"],
     "stats": {
       "size": 0.5,
       "structure": 4,
@@ -967,15 +893,9 @@
     "source": "HELLDIVERS™",
     "license_level": 2,
     "name": "Licchavis",
-    "mechtype": [
-      "Artillery"
-    ],
+    "mechtype": ["Artillery"],
     "description": "",
-    "mounts": [
-      "Main",
-      "Flex",
-      "Heavy"
-    ],
+    "mounts": ["Main","Flex","Heavy"],
     "stats": {
       "size": 2,
       "structure": 4,

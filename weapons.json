@@ -141,7 +141,7 @@
     "tags": [{"id": "tg_limited","val": 8}]
   },
   {
-    "id": "AAFHAIL",
+    "id": "AAFTHALESHAIL",
     "name": "MISSILE Missiles",
     "source": "AAF",
     "license": "Thales",
@@ -158,7 +158,7 @@
     "tags": [{"id": "tg_smart"},{"id": "tg_heat_self","val": 1}]
   },
   {
-    "id": "AAFWILD",
+    "id": "AAFTHALESWILD",
     "name": "Torchlight Mk 64 ASM Chute-Guide Multisystem",
     "source": "AAF",
     "license": "Thales",
@@ -168,12 +168,13 @@
     "mount": "Superheavy",
     "type": "Launcher",
     "sp": 0,
+    "effect": "This weapon may fire when unloaded and doesn't consume charges when firing and this weapon counts as a valid weapon for SYSTEM TRAUMA even while out of limited charges, but it may not deploy Torchlight Anti-Ship Missiles while unloaded or out of charges.",
     "profiles": [
       {
         "name": "Fire Torchlight",
-        "effect": "<div>You may use either the Laser Designate or Fire Levi weapon profile, but only one each turn.</div>",
+        "effect": "<div>You may use either the Laser Designate or Fire Torchlight weapon profile, but only one each turn.</div>",
         "barrage": true,
-        "on_attack": "<div>When this weapon is fired, designate a target space within Range 10 or Sensors, whichever is greater. This weapon then deploys the Levi missile to a space adjacent to you. At the start of each of your subsequent turns, the missile flies 3 spaces towards the target. The missile moves as directly as possible, but only in a straight line decided by you each turn, until it arrives at the target point or collides with an obstruction or character it detonates with a Burst 2 explosion. Characters within the affected area must make an Agility save. On fail, they take 3d6+12 Explosive damage; on success, they take half damage.</div>",
+        "on_attack": "<div>When this weapon is fired, designate a target space within Range 10 or Sensors, whichever is greater. This weapon then consumes a charge and deploys the Torchlight Anti-Ship missile to a space adjacent to you. At the start of each of your subsequent turns, the missile flies 3 spaces towards the target. The missile moves as directly as possible, but only in a straight line decided by you each turn, until it arrives at the target point or collides with an obstruction or character it detonates with a Burst 2 explosion. Characters within the affected area must make an Agility save. On fail, they take 3d6+12 Explosive damage; on success, they take half damage.</div>",
         "tags": [{"id": "tg_limited","val": 3},{"id": "tg_loading"}],
         "deployables": [
           {
@@ -193,8 +194,8 @@
         "barrage": true,
         "skirmish": true,
         "on_attack": "<div>Change the target point all currently active Torchlight Anti-Ship Missiles you have fired are seeking to the targeted point.</div>",
-        "on_hit": "<div>Choose a space the target character occupies; this space becomes the target point all currently active Levi Missiles you have fired are seeking.</div>",
-        "damage": [{"type": "Energy","val": 1}],
+        "on_hit": "<div>Choose a space the target character occupies; this space becomes the target point all currently active Torchlight Anti-Ship Missiles you have fired are seeking.</div>",
+        "damage": [{"type": "Energy","val": "2d6"}],
         "range": [{"type": "Range","val": 10}]
       }
     ]
@@ -340,13 +341,13 @@
     "sp": 0,
     "barrage": true,
     "skirmish": true,
-    "damage": [{"type": "Energy","val": "1d6+4"},{"type": "Heat","val": 2},{"type": "Burn","val": 4}],
+    "damage": [{"type": "Energy","val": "1d6"},{"type": "Heat","val": 4},{"type": "Burn","val": 4}],
     "range": [{"type": "Line","val": 20}],
-    "tags": [{"id": "tg_ordnance"},{"id": "tg_accurate"},{"id": "tg_limited","val": 2}]
+    "tags": [{"id": "tg_ordnance"},{"id": "tg_accurate"},{"id": "tg_arcing"},{"id": "tg_loading"}]
   },
   {
     "id": "AAFINTEGRATEDCORESTORM",
-    "name": "Storm Laser Array",
+    "name": "Storm Laser Blaster",
     "source": "AAF",
     "license": "",
     "license_id": "",
@@ -358,7 +359,7 @@
     "effect": "<div>You may take more than two Storm Laser Arrays and the Storm Laser pilot weapon if you have access to it, however you may not take any other Exotic equipment if you do so.</div>",
     "barrage": true,
     "skirmish": true,
-    "damage": [{"type": "Energy","val": "1d3+1"}],
+    "damage": [{"type": "Energy","val": "1d3+2"}],
     "range": [{"type": "Range","val": 15}],
     "tags": [{"id": "tg_ordnance"},{"id": "tg_exotic","filter_ignore": true}]
   },
@@ -870,35 +871,35 @@
         "range": [{"type": "Line","val": 20}],
         "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_ap"},{"id": "tg_arcing"},{"id": "tg_reliable","val": 4}]
       },
-	  {
-		"name": "Barrel",
-		"effect": "<div>You may fire this weapon using any profile.</div>",
-		"on_attack": "<div>Place a Size 1 piece of hard cover between you and the target.</div>",
-		"barrage": true,
-		"skirmish": false,
-		"damage": [{"type": "Explosive","val": "3d6"}],
-		"range": [{"type": "Range","val": 20}],
-		"tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_knockback", "val": 2}]
-	  },
+	    {
+		    "name": "Barrel",
+		    "effect": "<div>You may fire this weapon using any profile.</div>",
+		    "on_attack": "<div>Place a Size 1 piece of hard cover between you and the target.</div>",
+		    "barrage": true,
+		    "skirmish": false,
+		    "damage": [{"type": "Explosive","val": "3d6"}],
+		    "range": [{"type": "Range","val": 20}],
+		    "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4},{"id": "tg_knockback", "val": 2}]
+	    },
       {
         "name": "High Explosive Shell",
         "effect": "<div>You may fire this weapon using any profile.</div>",
         "barrage": true,
         "skirmish": false,
         "damage": [{"type": "Explosive","val": "2d6"}],
-        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 3}],
+        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 2}],
         "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4}]
       },
-	  {
-		  "name": "Illumination Shell",
-		  "effect": "<div>You may fire this weapon using any profile.</div>",
-		  "on_attack": "<div>When firing with this profile, the affected area becomes covered in soft cover until the end of your next turn. Characters fully inside the area cannot draw line of sight outside of it.</div>",
-		  "barrage": true,
-		  "skirmish": false,
-		  "damage": [{"type": "Explosive","val": "1d6"}],
-		  "range": [{"type": "Range","val": 20},{"type": "Blast","val": 3}],
-		  "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4}]
-	  }
+	    {
+		    "name": "Illumination Shell",
+		    "effect": "<div>You may fire this weapon using any profile.</div>",
+		    "on_attack": "<div>When firing with this profile, the affected area becomes covered in soft cover until the end of your next turn. Characters fully inside the area cannot draw line of sight outside of it.</div>",
+		    "barrage": true,
+		    "skirmish": false,
+		    "damage": [{"type": "Explosive","val": "1d6"}],
+		    "range": [{"type": "Range","val": 20},{"type": "Blast","val": 3}],
+		    "tags": [{"id": "tg_loading"},{"id": "tg_heat_self","val": 4}]
+	    }
     ]
   }
 ]
