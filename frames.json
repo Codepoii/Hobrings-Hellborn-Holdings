@@ -628,12 +628,12 @@
   {
     "id": "HD_SHAKYAS",
     "license_id": "HD_SHAKYAS",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license_level": 2,
     "name": "Shakyas",
-    "mechtype": ["Striker","Controller"],
-    "description": "<div><em>\"The 'Shakyas' Exosuit is a continued and specialized development of the EXO-44 ‘Byblos’ Exosuit. Armed with two twin 20mm autocannons, it is devastating to low and medium armored targets. Its only drawback is the distinct lack of Anti-Tank capability.\"<br>- Armory Description</em></div><div></div><div>Constantly being improved upon over the years, the EXO-48 Shakyas Exosuit is an originally archaic design that has stood the test of time. Although its stock loadout lacks the anti-armour capabilities of its predecessor, the frame is easily modifiable and its systems are beneficial to most common weapons. Like the Byblos, the Shakyas often finds itself in places where printers are scarce, allowing it to make the most of its easily replaceable parts.</div>",
-    "mounts": ["Main","Main"],
+    "mechtype": ["Striker","Defender"],
+    "description": "<div>Constantly being improved upon over the years, the EXO-48 Shakyas Exosuit is an originally archaic design that has stood the test of time. Although its stock loadout lacks the anti-armour capabilities of its predecessor, the frame is easily modifiable and its systems are beneficial to most common weapons. Like the Byblos, the Shakyas often finds itself in places where printers are scarce, allowing it to make the most of its easily replaceable parts.</div>",
+    "mounts": ["Main","Main/Aux"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -671,7 +671,7 @@
     "core_system": {
       "name": "Systems Tweak",
       "active_name": "Gimbal Unlock",
-      "active_effect": "<p>You unlock the gimbal mounts on your weapons, allowing them to rotate independently of each-other. For the rest of the scene:</p><ul><li><p>1/round, you may take an additional Overwatch reaction.</p></li><li><p>You gain +1 Accuracy on attacks made as reactions.</p></li><li><p>If a weapon does not already have Reliable, it gains Reliable 1.</p></li></ul>",
+      "active_effect": "<div>You unlock the gimbal mounts on your weapons, allowing them to rotate independently of each-other. For the rest of the scene:<ul><li>1/round, you may take an additional Overwatch reaction.</li><li>You gain +1 Accuracy on attacks made as reactions.</li><li>If a weapon does not already have Reliable, it gains Reliable 1.</li></ul></div>",
       "activation": "Protocol",
       "description": "<p>Due to the Shakyas's simple construction, field modifications and tweaks to the mech's systems are commonplace among savvy pilots.</p>",
       "use": "Encounter"
@@ -682,11 +682,11 @@
   {
     "id": "HD_KOLIYAS",
     "license_id": "HD_KOLIYAS",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license_level": 2,
     "name": "Koliyas",
     "mechtype": ["Defender"],
-    "description": "<div><em>\"The EXO-51 was developed as a specific counter to heavier enemy targets, incorporating a 90mm cannon into the design. It is also armed with a flamer to deal with smaller threats. Some compromises were made to accommodate the large cannon, most notably it has severely limited ammunition and lacks gyro stabilization for its main gun.\"<br>- Armory Description</em></div><div></div><div>Developed to fight heavier threats, the EXO-51 Koliyas is simple, reliable, but clunky frame capable of carrying heavier weaponry than its predecessors. Typically deployed with the FLAM-270 Arc Melter and the AC-150 Liberty, its stock loadout is capable of dealing with a wide variety of opponents, an ability that, along with its bulk, has made it a popular choice across the galaxy.</div>",
+    "description": "<div>Developed to fight heavier threats, the EXO-51 Koliyas is simple, reliable, but clunky frame capable of carrying heavier weaponry than its predecessors. Typically deployed with the FLAM-270 Arc Melter and the AC-150 Liberty, its stock loadout is capable of dealing with a wide variety of opponents, an ability that, along with its bulk, has made it a popular choice across the galaxy.</div>",
     "mounts": ["Flex","Heavy"],
     "stats": {
       "size": 2,
@@ -707,26 +707,38 @@
     "traits": [
       {
         "name": "Slow",
-        "description": "<div>The Koliyas receives +1 difficulty on Agility checks and saves.</div>"
+        "description": "<div>The Koliyas receives +1 difficulty on Agility checks and saves.</div>",
+        "synergies": [
+          {
+            "detail": "<div>The Koliyas receives +1 difficulty on Agility checks and saves.</div>",
+            "locations": ["agility"]
+          }
+        ]
       },
       {
         "name": "Guardian",
         "description": "<div>Adjacent allied characters can use the Koliyas for hard cover.</div>"
       },
       {
-        "name": "Sluggish Actuators",
-        "description": "<div>The Koliyas receives +1 difficulty on all attacks made as reactions (e.g. Overwatch).</div>"
+        "name": "Refined Actuators",
+        "description": "<div>The Koliyas receives +1 accuracy on all attacks made as reactions (e.g. Overwatch).</div>",
+        "synergies": [
+          {
+            "detail": "<div>The Koliyas receives +1 accuracy on all attacks made as reactions.</div>",
+            "locations": ["overwatch","weapon"]
+          }
+        ]
       }
     ],
     "core_system": {
       "name": "Integrated COMP/CON Unit",
       "active_name": "Sentry Mode",
-      "active_effect": "<p>You hand over control of your mech's weapons to your COMP/CON unit for the rest of the scene, being responsible solely for movement. It acts immediately after you, using whatever actions are remaining from your turn to attack the nearest enemy within line of sight. While the controls are transferred, you gain the following benefits:</p><ul><li><p>You roll a critical on a 19 or 20.</p></li><li><p>If you do not move, voluntarily or involuntarily, you roll to hit with accuracy.</p></li><li><p>Your weapons gain +5 Range.</p></li><li><p>You may reload loading weapons as a free action.</p></li></ul><p>At the end of the scene, weapons control is returned to you and the COMP/CON unit goes into a repair state, its electronics damaged from the immense amount of processing it had to do. While in its repair state, you do not benefit from the COMP/CON unit's passive until your next full repair.</p>",
+      "active_effect": "<div>You hand over control of your mech's weapons to your COMP/CON unit for the rest of the scene, being responsible solely for movement. It acts immediately after you, using whatever actions are remaining from your turn to attack the nearest enemy within line of sight. While the controls are transferred, you gain the following benefits:<ul><li>You roll a critical on a 19 or 20.</li><li>If you do not voluntarily move, you roll to hit with accuracy.</li><li>Your ranged weapons gain +2 threat.</li></ul>At the end of the scene, weapons control is returned to you and the COMP/CON unit goes into a repair state, its electronics damaged from the immense amount of processing it had to do. While in its repair state, you do not benefit from the COMP/CON unit's passive until your next full repair.</div>",
       "activation": "Protocol",
-      "description": "<p>The Koliyas comes equipped with an integrated President-Class COMP/CON unit designed to decrease pilot stress by assisting with aiming weapons. Though the frame's handbook states not to hand full weapons control over to the unit, most pilots disregard it.</p>",
+      "description": "<div>The Koliyas comes equipped with an integrated President-Class COMP/CON unit designed to decrease pilot stress by assisting with aiming weapons. Though the frame's handbook states not to hand full weapons control over to the unit, most pilots disregard it.</div>",
       "use": "Encounter",
       "passive_name": "President-Class Integrated COMP/CON Unit",
-      "passive_effect": "<p>Your mech gains the AI tag; however, this COMP/CON doesn’t count towards the number of AIs you may have installed at once.</p><p></p><p>Any turrets or other stationary automated weapons under your control will prioritize targets you attack, even if the attack misses.</p><p></p><p>You can give control of your mech to its COMP/CON as a protocol, allowing your mech to act independently on your turn with its own set of actions. Unlike other AIs, a mech controlled by a COMP/CON has no independent initiative and requires direct input. Your mech will follow basic courses of action (defend this area, attack this enemy, protect me, etc.) to the best of its ability, or will act to defend itself if its instructions are complete or it receives no further guidance. You can issue new commands at the start of your turn as long as you are within Range 50 and have the means to communicate with your mech. Comp/con units are not true NHPs and thus cannot enter cascade.</p>"
+      "passive_effect": "<div>Your mech gains the AI tag; however, this COMP/CON doesn’t count towards the number of AIs you may have installed at once.<p><p>Any turrets or other stationary automated weapons under your control will prioritize targets you attack, even if the attack misses.<p><p>You can give control of your mech to its COMP/CON as a protocol, allowing your mech to act independently on your turn with its own set of actions. Unlike other AIs, a mech controlled by a COMP/CON has no independent initiative and requires direct input. Your mech will follow basic courses of action (defend this area, attack this enemy, protect me, etc.) to the best of its ability, or will act to defend itself if its instructions are complete or it receives no further guidance. You can issue new commands at the start of your turn as long as you are within Range 50 and have the means to communicate with your mech. Comp/con units are not true NHPs and thus cannot enter cascade.</div>"
     },
     "image_url": "",
     "y_pos": 0
@@ -734,11 +746,11 @@
   {
     "id": "HD_BYBLOS",
     "license_id": "HD_BYBLOS",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license_level": 2,
     "name": "Byblos",
     "mechtype": ["Striker"],
-    "description": "<div><em>\"The pinnacle of Helldiver weaponry; the EXO-44 is a manned Byblos armed with the MG-11 minigun and eight anti-infantry homing missiles.\"<br>- Armory Description</em></div><div></div><div>Though largely obsolete by modern standards, the Byblos is still favoured by some pilots for its modifiability and reliability, with many of them often being a mismatch of replacement parts from various other Bybloss. Many consider these pilots to be mad or downright stupid, but they've proven to be just as effective as pilots of more modern mechs, meaning they haven't been forced to a newer frame just yet.</div>",
+    "description": "<div>Though largely obsolete by modern standards, the Byblos is still favoured by some pilots for its modifiability and reliability, with many of them often being a mismatch of replacement parts from various other Byblos. Many consider these pilots to be mad or downright stupid, but they've proven to be just as effective as pilots of more modern mechs, meaning they haven't been forced to a newer frame just yet.</div>",
     "mounts": ["Main","Aux/Aux"],
     "stats": {
       "size": 1,
@@ -782,7 +794,7 @@
   {
     "id": "HD_MALLAKAS",
     "license_id": "HD_MALLAKAS",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license_level": 2,
     "name": "Mallakas",
     "mechtype": ["Support","Striker"],
@@ -821,7 +833,7 @@
     "core_system": {
       "name": "Stratagem Support",
       "active_name": "Hero of Democracy",
-      "active_effect": "<p>For the rest of the scene;</p><ul><li><p>Entering line of sight of hostile characters or moving from cover does not stop you from being Hidden.</p></li><li><p>The Mallakas may throw Grenades or plant Mines from any system anywhere within Sensors.</p></li><li><p>When you use a Limited weapon or system, roll a d6. On a 5 or 6, regain one limited use of that weapon or system.</p></li><li><p>When targeted for an attack or within the area of an attack the Mallakas may immediately drop prone as a reaction.</p></li></ul>",
+      "active_effect": "<div>For the rest of the scene;<ul><li>Entering line of sight of hostile characters or moving from cover does not stop you from being Hidden.</li><li>The Mallakas may throw Grenades or plant Mines from any system anywhere within Sensors.</li><li>When you use a Limited weapon or system, roll a d6. On a 5 or 6, regain one limited use of that weapon or system.</li><li>When targeted for an attack or within the area of an attack the Mallakas may immediately dive prone as a reaction.</li></ul></div>",
       "activation": "Protocol",
       "description": "",
       "use": "Encounter",
@@ -829,7 +841,7 @@
         {
           "name": "Dive Prone",
           "activation": "Reaction",
-          "detail": "<p>As long as you are not Immobilized, immediately move 1 space. This movement ignores engagement and Slowed and doesn’t provoke reactions. Afterwards, immediately become Prone.</p>",
+          "detail": "<div>As long as you are not Immobilized, immediately move 1 space. This movement ignores engagement and Slowed and doesn’t provoke reactions. Afterward the attack, become Prone.</div>",
           "cost": 0,
           "pilot": false,
           "tech_attack": false,
@@ -890,7 +902,7 @@
   {
     "id": "HD_LICCHAVIS",
     "license_id": "HD_LICCHAVIS",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license_level": 2,
     "name": "Licchavis",
     "mechtype": ["Artillery"],
@@ -919,21 +931,21 @@
       },
       {
         "name": "Lightweight Frame",
-        "description": "<div>Whenever the Licchavis fires a Heavy or Superheavy weapon, it may choose to move up to two spaces in the opposite direction of where it fired. </div>"
+        "description": "<div>Whenever the Licchavis fires a Heavy or Superheavy weapon, it may choose to move one space in any direction.</div>"
       }
     ],
     "core_system": {
       "name": "Judgement Satellite Array",
       "active_name": "His Divine Light",
-      "active_effect": "<p>You fire your Judgement Satellite Array, creating 3 Blast 1 areas of blinding white light that don't overlap originating at spaces you can see within Range 50. Whenever a character starts their turn in or enters an area for the first time during their turn, they take 1d6 Energy damage. As a full action, you may relocate any number of these beams, following the same rules as deploying them.</p>",
+      "active_effect": "<div>You fire your Judgement Satellite Array, creating 3 Blast 1 areas of blinding white light that don't overlap originating at spaces you can see within Range 50. Whenever a character starts their turn in or enters an area for the first time during their turn, they take 1d6 Energy damage. As a full action, you may relocate any number of these beams, following the same rules as deploying them.</div>",
       "activation": "Full",
-      "description": "<p>Licensed alongside the Licchavis frame is your very own Judgement Satellite Array. Look at how special you are!</p><p></p><p>Utilizing groups of satellites firing towards singular focal points, Judgement Arrays are capable of projecting devastating force for their energy cost. Though not the deadliest weapon in the Helldivers arsenal, they excel at illuminating enemies, making them stand right out in the sights of a Smite or Claymore.</p>",
+      "description": "<div>Licensed alongside the Licchavis frame is your very own Judgement Satellite Array. Look at how special you are!<p><p>Utilizing groups of satellites firing towards singular focal points, Judgement Arrays are capable of projecting devastating force for their energy cost. Though not the deadliest weapon in the Helldivers arsenal, they excel at illuminating enemies, making them stand right out in the sights of a Smite or Claymore.</dive>",
       "use": "Encounter",
       "active_actions": [
         {
           "name": "Relocate His Divine Light",
           "activation": "Full",
-          "detail": "<p>You relocate any number of your His Divine Light beams to new positions within Line of Sight and Range 50.</p>",
+          "detail": "<div>You relocate any number of your His Divine Light beams to new positions within Line of Sight and Range 50.</div>",
           "cost": 0,
           "pilot": false,
           "tech_attack": false

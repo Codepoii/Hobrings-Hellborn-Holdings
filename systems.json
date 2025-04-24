@@ -604,14 +604,14 @@
     "id": "AAFEULERGOLD",
     "name": "Gold Coating",
     "source": "AAF",
-    "license": "Euler",
-    "license_id": "AAFEULER",
-    "license_level": 3,
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
     "effect": "<div>If you are targeted by a tech action, the character targeting must pass a Hull save. If they fail, they must choose a different target for the action or lose the action. While you are hidden, hostile traits and systems cannot affect you, hostiles cannot see you without line of sight, and this cannot be prevented by any means. If you take structure damage, this system is immediately destroyed before any roll is made.</div>",
     "type": "System",
-    "sp": 3,
+    "sp": 2,
     "description": "<div>The coating of mechs in gold was a fringe idea when it was conceived, even in the think-tanks of the AAF, but its benefits outweigh its fragility for many pilots who now pay a premium to the AAF for the rights to use their gold plating patterns for mechs across space and time.</div>",
-    "tags": [{"id": "tg_unique"}]
+    "tags": [{"id": "tg_unique"},{"id": "tg_exotic"}]
   },
   {
     "id": "AAFINTEGRATEDCOREBOMBARDMENT",
@@ -629,7 +629,7 @@
   {
     "id": "HD_OBSIDIAN_STATICFIELD",
     "name": "Static Field Conductors",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Shakyas",
     "license_id": "HD_SHAKYAS",
     "license_level": 2,
@@ -651,7 +651,7 @@
   {
     "id": "HD_LUMBERER_TURRET",
     "name": "A/RX-34 Railcannon Turret",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Koliyas",
     "license_id": "HD_KOLIYAS",
     "license_level": 3,
@@ -687,7 +687,7 @@
   {
     "id": "HD_LUMBERER_FREEZERCANISTERS",
     "name": "Emergency Heat Dump Canisters",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Koliyas",
     "license_id": "HD_KOLIYAS",
     "license_level": 1,
@@ -700,7 +700,7 @@
   {
     "id": "HD_Byblos_MISSILEBARRAGE",
     "name": "Missile Barrage",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Byblos",
     "license_id": "HD_BYBLOS",
     "license_level": 3,
@@ -723,7 +723,7 @@
   {
     "id": "HD_Byblos_HEAVYSTRAFINGRUN",
     "name": "Strafing Run",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Byblos",
     "license_id": "HD_BYBLOS",
     "license_level": 1,
@@ -746,7 +746,7 @@
   {
     "id": "HD_LIBERTYDIVER_VINDICATOR",
     "name": "Vindicator Dive Bomb",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Mallakas",
     "license_id": "HD_MALLAKAS",
     "license_level": 3,
@@ -759,7 +759,7 @@
   {
     "id": "HD_LIBERTYDIVER_TURRETS",
     "name": "A/CR-9 Suppressor Mini-Turrets",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Mallakas",
     "license_id": "HD_MALLAKAS",
     "license_level": 1,
@@ -794,7 +794,7 @@
   {
     "id": "HD_LIBERTYDIVER_HELLBOMB",
     "name": "NUX-223 Hellbomb",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Mallakas",
     "license_id": "HD_MALLAKAS",
     "license_level": 1,
@@ -827,7 +827,7 @@
   {
     "id": "HD_LIBERTYDIVER_LAWNDARTS",
     "name": "Javelin Charges",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Mallakas",
     "license_id": "HD_MALLAKAS",
     "license_level": 2,
@@ -850,7 +850,7 @@
   {
     "id": "HD_STUN_MINES",
     "name": "Airdropped Stun Mines",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "license": "Koliyas",
     "license_id": "HD_KOLIYAS",
     "license_level": 2,

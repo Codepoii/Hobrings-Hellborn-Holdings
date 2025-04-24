@@ -86,7 +86,7 @@
   {
     "id": "HD_CORE_SHREDDER",
     "name": "Shredder Missile License",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "effect": "<div>Upon taking this core bonus, you are immediately licensed to use the Shredder Missile Strike. 1/mission, you may use the Request Shredder Missile Strike full action.</div>",
     "description": "<blockquote><div><em>\"Side effects include shell shock, mutation, and/or death.\" - Armory Description</em></div></blockquote><div>Designed to cause miniature localized catastrophes and leave a lasting impact, the Shredder Micro-Nuclear Tactical missile is licensed to a select few who have proven themselves to be true heroes of democracy. Despite this, a Helldiver's ability to cause accidental death with one should never be underestimated.</div>",
     "actions": [
@@ -104,7 +104,7 @@
   {
     "id": "HD_CORE_SPECOPSTRAINING",
     "name": "Helldiver Humunculi Program",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "effect": "<div>Your mech gains the AI tag, though this does not count against the number of AIs you may have on your mech. While under the control of this AI, the mech may not benefit from your talents but, as it is not an NHP, this AI will not cascade. At the start of each mission, choose 1 NPC role (Ex. Striker, Artillery, etc.) Against your chosen Role, you gain the following benefits:</div><ul><li><div>You a roll a critical on attack rolls higher than 19. If another rule already causes this, it extends to 18, then 17, going on as such.</div></li><li><div>You gain +1 accuracy on attacks.</div></li><li><div>1/round, you may choose to deal +1d6 bonus Kinetic damage when you hit with a ranged or melee attack.</div></li></ul>",
     "description": "<div>The Helldivers training program not only extends to their personnel; their computers are also presented with humunculi trained on combat data gathered by the user to best combat relevant threats found on the field.</div>",
     "mounted_effect": ""
@@ -112,7 +112,7 @@
   {
     "id": "HD_CORE_CARDIO_ACCELERATOR",
     "name": "Cardio Accelerator",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "effect": "<div>1/scene, you gain may Boost as a free action.</div>",
     "description": "<div>Incorrectly called MASC (Myomer Accelerator Signal Circuitry) by some, the Cardio Accelerator is a advanced technological advancement that overcharges the actuators in your mech, allowing for increased dynamic performance.</div>",
     "synergies": [{"locations": ["boost"],"detail": "1/scene, you may Boost as a free action."}]
@@ -120,35 +120,26 @@
   {
     "id": "HD_CORE_HEAVY_ARMOUR",
     "name": "Bastion Up-Armour Program",
-    "source": "HELLDIVERS™",
-    "effect": "<div>You gain 2 Armour, but lose 1 Speed. Additionally, your maximum Armour is increased up to 5.</div>",
+    "source": "DFI",
+    "effect": "<div>You gain 1 Armour and 2 evasion, but lose 1 Speed.</div>",
     "description": "<div>By welding some frontal armour plates from TD-110 Bastion tank destroyers to their mechs, some pilots like to increase the protection they offer. This usually comes at the cost of extra weight, but most will argue the pros outweigh the cons.</div>",
     "bonuses": [
-      {
-        "id": "armor",
-        "val": 2,
-        "overwrite": false,
-        "replace": false
-      },
-      {
-        "id": "speed",
-        "val": -1,
-        "overwrite": false,
-        "replace": false
-      }
+      {"id": "armor","val": 1,"overwrite": false,"replace": false},
+      {"id": "evasion","val": 2,"overwrite": false,"replace": false},
+      {"id": "speed","val": -1,"overwrite": false,"replace": false}
     ]
   },
   {
     "id": "HD_CORE_DEMOCRACY_PROTECTS",
     "name": "Democracy Protects",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "effect": "1/scene, If an attack would cause you to lose structure, before the hit roll is made, you may immediately roll a d6: on 4+, the attack misses; on 3-, gain resistance to that attack and, if you take structure damage, immediately move up to your speed, ignoring all statuses, conditions, and engagement. This does not stack with but is used instead of invisible.",
     "description": "Belief in the Union Pillars and the freedom of all is believed to be a self-reinforcing force of many Helldiver Licensees."
   },
   {
     "id": "HD_CORE_LIBERTEA",
     "name": "Cape Priviliges",
-    "source": "HELLDIVERS™",
+    "source": "DFI",
     "effect": "You are invisible during your turn, attacks against you during your turn receive +1 difficulty, and you may move up to your speed then drop prone as a quick action to clear burn.",
     "actions": [{"name": "Safety Dive","activation": "Quick","detail": "Move a number of spaces up to your speed, drop prone, then clear any burn on your mech."}],
     "description": "Even Exosuits wear capes! Capes provide a level of dashing flair that guarantees the safety of the pilot - when they're paying attention."
